@@ -8,4402 +8,3818 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
+namespace AspNetCore.Reporting.ReportExecutionService
+{
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", ConfigurationName = "ReportExecutionServiceSoap")]
+    public interface ReportExecutionServiceSoap
+    {
+        // CODEGEN: Generating message contract since message ListSecureMethodsRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+                                                                 "tSecureMethods", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        ListSecureMethodsResponse ListSecureMethods(ListSecureMethodsRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+                                                                 "tSecureMethods", ReplyAction = "*")]
+        System.Threading.Tasks.Task<ListSecureMethodsResponse> ListSecureMethodsAsync(ListSecureMethodsRequest request);
+
+        // CODEGEN: Generating message contract since message LoadReportRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReport", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LoadReportResponse LoadReport(LoadReportRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReport", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LoadReportResponse> LoadReportAsync(LoadReportRequest request);
+
+        // CODEGEN: Generating message contract since message LoadReport2Request has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReport2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LoadReport2Response LoadReport2(LoadReport2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReport2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LoadReport2Response> LoadReport2Async(LoadReport2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReportDefinition", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LoadReportDefinitionResponse LoadReportDefinition(LoadReportDefinitionRequest request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReportDefinition", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LoadReportDefinitionResponse> LoadReportDefinitionAsync(LoadReportDefinitionRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReportDefinition2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LoadReportDefinition2Response LoadReportDefinition2(LoadReportDefinition2Request request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dReportDefinition2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LoadReportDefinition2Response> LoadReportDefinition2Async(LoadReportDefinition2Request request);
+
+        // CODEGEN: Generating message contract since message SetExecutionCredentialsRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionCredentials", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        SetExecutionCredentialsResponse SetExecutionCredentials(SetExecutionCredentialsRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionCredentials", ReplyAction = "*")]
+        System.Threading.Tasks.Task<SetExecutionCredentialsResponse> SetExecutionCredentialsAsync(SetExecutionCredentialsRequest request);
+
+        // CODEGEN: Generating message contract since message SetExecutionCredentials2Request has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionCredentials2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        SetExecutionCredentials2Response SetExecutionCredentials2(SetExecutionCredentials2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionCredentials2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<SetExecutionCredentials2Response> SetExecutionCredentials2Async(SetExecutionCredentials2Request request);
+
+        // CODEGEN: Generating message contract since message SetExecutionParametersRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionParameters", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        SetExecutionParametersResponse SetExecutionParameters(SetExecutionParametersRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionParameters", ReplyAction = "*")]
+        System.Threading.Tasks.Task<SetExecutionParametersResponse> SetExecutionParametersAsync(SetExecutionParametersRequest request);
+
+        // CODEGEN: Generating message contract since message SetExecutionParameters2Request has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionParameters2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        SetExecutionParameters2Response SetExecutionParameters2(SetExecutionParameters2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+                                                                 "ExecutionParameters2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<SetExecutionParameters2Response> SetExecutionParameters2Async(SetExecutionParameters2Request request);
+
+        // CODEGEN: Generating message contract since message ResetExecutionRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
+                                                                 "etExecution", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        ResetExecutionResponse ResetExecution(ResetExecutionRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
+                                                                 "etExecution", ReplyAction = "*")]
+        System.Threading.Tasks.Task<ResetExecutionResponse> ResetExecutionAsync(ResetExecutionRequest request);
+
+        // CODEGEN: Generating message contract since message ResetExecution2Request has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
+                                                                 "etExecution2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        ResetExecution2Response ResetExecution2(ResetExecution2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
+                                                                 "etExecution2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<ResetExecution2Response> ResetExecution2Async(ResetExecution2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
+                                                                 "der", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        RenderResponse Render(RenderRequest request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
+                                                                 "der", ReplyAction = "*")]
+        System.Threading.Tasks.Task<RenderResponse> RenderAsync(RenderRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
+                                                                 "der2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        Render2Response Render2(Render2Request request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
+                                                                 "der2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<Render2Response> Render2Async(Render2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
+                                                                 "derStream", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        RenderStreamResponse RenderStream(RenderStreamRequest request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
+                                                                 "derStream", ReplyAction = "*")]
+        System.Threading.Tasks.Task<RenderStreamResponse> RenderStreamAsync(RenderStreamRequest request);
+
+        // CODEGEN: Generating message contract since message GetExecutionInfoRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "ExecutionInfo", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        GetExecutionInfoResponse GetExecutionInfo(GetExecutionInfoRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "ExecutionInfo", ReplyAction = "*")]
+        System.Threading.Tasks.Task<GetExecutionInfoResponse> GetExecutionInfoAsync(GetExecutionInfoRequest request);
+
+        // CODEGEN: Generating message contract since message GetExecutionInfo2Request has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "ExecutionInfo2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        GetExecutionInfo2Response GetExecutionInfo2(GetExecutionInfo2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "ExecutionInfo2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<GetExecutionInfo2Response> GetExecutionInfo2Async(GetExecutionInfo2Request request);
+
+        // CODEGEN: Generating message contract since message GetDocumentMapRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "DocumentMap", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        GetDocumentMapResponse GetDocumentMap(GetDocumentMapRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "DocumentMap", ReplyAction = "*")]
+        System.Threading.Tasks.Task<GetDocumentMapResponse> GetDocumentMapAsync(GetDocumentMapRequest request);
+
+        // CODEGEN: Generating message contract since message LoadDrillthroughTargetRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dDrillthroughTarget", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LoadDrillthroughTargetResponse LoadDrillthroughTarget(LoadDrillthroughTargetRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dDrillthroughTarget", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LoadDrillthroughTargetResponse> LoadDrillthroughTargetAsync(LoadDrillthroughTargetRequest request);
+
+        // CODEGEN: Generating message contract since message LoadDrillthroughTarget2Request has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dDrillthroughTarget2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LoadDrillthroughTarget2Response LoadDrillthroughTarget2(LoadDrillthroughTarget2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
+                                                                 "dDrillthroughTarget2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LoadDrillthroughTarget2Response> LoadDrillthroughTarget2Async(LoadDrillthroughTarget2Request request);
+
+        // CODEGEN: Generating message contract since message ToggleItemRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Tog" +
+                                                                 "gleItem", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        ToggleItemResponse ToggleItem(ToggleItemRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Tog" +
+                                                                 "gleItem", ReplyAction = "*")]
+        System.Threading.Tasks.Task<ToggleItemResponse> ToggleItemAsync(ToggleItemRequest request);
+
+        // CODEGEN: Generating message contract since message NavigateDocumentMapRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
+                                                                 "igateDocumentMap", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        NavigateDocumentMapResponse NavigateDocumentMap(NavigateDocumentMapRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
+                                                                 "igateDocumentMap", ReplyAction = "*")]
+        System.Threading.Tasks.Task<NavigateDocumentMapResponse> NavigateDocumentMapAsync(NavigateDocumentMapRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
+                                                                 "igateBookmark", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        NavigateBookmarkResponse NavigateBookmark(NavigateBookmarkRequest request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
+                                                                 "igateBookmark", ReplyAction = "*")]
+        System.Threading.Tasks.Task<NavigateBookmarkResponse> NavigateBookmarkAsync(NavigateBookmarkRequest request);
+
+        // CODEGEN: Generating message contract since message FindStringRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fin" +
+                                                                 "dString", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        FindStringResponse FindString(FindStringRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fin" +
+                                                                 "dString", ReplyAction = "*")]
+        System.Threading.Tasks.Task<FindStringResponse> FindStringAsync(FindStringRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
+                                                                 "t", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        SortResponse Sort(SortRequest request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
+                                                                 "t", ReplyAction = "*")]
+        System.Threading.Tasks.Task<SortResponse> SortAsync(SortRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
+                                                                 "t2", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        Sort2Response Sort2(Sort2Request request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
+                                                                 "t2", ReplyAction = "*")]
+        System.Threading.Tasks.Task<Sort2Response> Sort2Async(Sort2Request request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "RenderResource", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        GetRenderResourceResponse GetRenderResource(GetRenderResourceRequest request);
+
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+                                                                 "RenderResource", ReplyAction = "*")]
+        System.Threading.Tasks.Task<GetRenderResourceResponse> GetRenderResourceAsync(GetRenderResourceRequest request);
+
+        // CODEGEN: Generating message contract since message ListRenderingExtensionsRequest has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+                                                                 "tRenderingExtensions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        ListRenderingExtensionsResponse ListRenderingExtensions(ListRenderingExtensionsRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+                                                                 "tRenderingExtensions", ReplyAction = "*")]
+        System.Threading.Tasks.Task<ListRenderingExtensionsResponse> ListRenderingExtensionsAsync(ListRenderingExtensionsRequest request);
+
+        // CODEGEN: Generating message contract since message LogonUserResponse has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
+                                                                 "onUser", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LogonUserResponse LogonUser(LogonUserRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
+                                                                 "onUser", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LogonUserResponse> LogonUserAsync(LogonUserRequest request);
+
+        // CODEGEN: Generating message contract since message LogoffResponse has headers
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
+                                                                 "off", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute()]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
+        LogoffResponse Logoff(LogoffRequest request);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
+                                                                 "off", ReplyAction = "*")]
+        System.Threading.Tasks.Task<LogoffResponse> LogoffAsync(LogoffRequest request);
+    }
 
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.ServiceContractAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", ConfigurationName="ReportExecutionServiceSoap")]
-public interface ReportExecutionServiceSoap
-{
-    
-    // CODEGEN: Generating message contract since message ListSecureMethodsRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
-        "tSecureMethods", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    ListSecureMethodsResponse ListSecureMethods(ListSecureMethodsRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
-        "tSecureMethods", ReplyAction="*")]
-    System.Threading.Tasks.Task<ListSecureMethodsResponse> ListSecureMethodsAsync(ListSecureMethodsRequest request);
-    
-    // CODEGEN: Generating message contract since message LoadReportRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReport", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LoadReportResponse LoadReport(LoadReportRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReport", ReplyAction="*")]
-    System.Threading.Tasks.Task<LoadReportResponse> LoadReportAsync(LoadReportRequest request);
-    
-    // CODEGEN: Generating message contract since message LoadReport2Request has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReport2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LoadReport2Response LoadReport2(LoadReport2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReport2", ReplyAction="*")]
-    System.Threading.Tasks.Task<LoadReport2Response> LoadReport2Async(LoadReport2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReportDefinition", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LoadReportDefinitionResponse LoadReportDefinition(LoadReportDefinitionRequest request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReportDefinition", ReplyAction="*")]
-    System.Threading.Tasks.Task<LoadReportDefinitionResponse> LoadReportDefinitionAsync(LoadReportDefinitionRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReportDefinition2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LoadReportDefinition2Response LoadReportDefinition2(LoadReportDefinition2Request request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dReportDefinition2", ReplyAction="*")]
-    System.Threading.Tasks.Task<LoadReportDefinition2Response> LoadReportDefinition2Async(LoadReportDefinition2Request request);
-    
-    // CODEGEN: Generating message contract since message SetExecutionCredentialsRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionCredentials", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    SetExecutionCredentialsResponse SetExecutionCredentials(SetExecutionCredentialsRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionCredentials", ReplyAction="*")]
-    System.Threading.Tasks.Task<SetExecutionCredentialsResponse> SetExecutionCredentialsAsync(SetExecutionCredentialsRequest request);
-    
-    // CODEGEN: Generating message contract since message SetExecutionCredentials2Request has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionCredentials2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    SetExecutionCredentials2Response SetExecutionCredentials2(SetExecutionCredentials2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionCredentials2", ReplyAction="*")]
-    System.Threading.Tasks.Task<SetExecutionCredentials2Response> SetExecutionCredentials2Async(SetExecutionCredentials2Request request);
-    
-    // CODEGEN: Generating message contract since message SetExecutionParametersRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionParameters", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    SetExecutionParametersResponse SetExecutionParameters(SetExecutionParametersRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionParameters", ReplyAction="*")]
-    System.Threading.Tasks.Task<SetExecutionParametersResponse> SetExecutionParametersAsync(SetExecutionParametersRequest request);
-    
-    // CODEGEN: Generating message contract since message SetExecutionParameters2Request has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionParameters2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    SetExecutionParameters2Response SetExecutionParameters2(SetExecutionParameters2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
-        "ExecutionParameters2", ReplyAction="*")]
-    System.Threading.Tasks.Task<SetExecutionParameters2Response> SetExecutionParameters2Async(SetExecutionParameters2Request request);
-    
-    // CODEGEN: Generating message contract since message ResetExecutionRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
-        "etExecution", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    ResetExecutionResponse ResetExecution(ResetExecutionRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
-        "etExecution", ReplyAction="*")]
-    System.Threading.Tasks.Task<ResetExecutionResponse> ResetExecutionAsync(ResetExecutionRequest request);
-    
-    // CODEGEN: Generating message contract since message ResetExecution2Request has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
-        "etExecution2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    ResetExecution2Response ResetExecution2(ResetExecution2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
-        "etExecution2", ReplyAction="*")]
-    System.Threading.Tasks.Task<ResetExecution2Response> ResetExecution2Async(ResetExecution2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
-        "der", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    RenderResponse Render(RenderRequest request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
-        "der", ReplyAction="*")]
-    System.Threading.Tasks.Task<RenderResponse> RenderAsync(RenderRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
-        "der2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    Render2Response Render2(Render2Request request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
-        "der2", ReplyAction="*")]
-    System.Threading.Tasks.Task<Render2Response> Render2Async(Render2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
-        "derStream", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    RenderStreamResponse RenderStream(RenderStreamRequest request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ren" +
-        "derStream", ReplyAction="*")]
-    System.Threading.Tasks.Task<RenderStreamResponse> RenderStreamAsync(RenderStreamRequest request);
-    
-    // CODEGEN: Generating message contract since message GetExecutionInfoRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "ExecutionInfo", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    GetExecutionInfoResponse GetExecutionInfo(GetExecutionInfoRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "ExecutionInfo", ReplyAction="*")]
-    System.Threading.Tasks.Task<GetExecutionInfoResponse> GetExecutionInfoAsync(GetExecutionInfoRequest request);
-    
-    // CODEGEN: Generating message contract since message GetExecutionInfo2Request has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "ExecutionInfo2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    GetExecutionInfo2Response GetExecutionInfo2(GetExecutionInfo2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "ExecutionInfo2", ReplyAction="*")]
-    System.Threading.Tasks.Task<GetExecutionInfo2Response> GetExecutionInfo2Async(GetExecutionInfo2Request request);
-    
-    // CODEGEN: Generating message contract since message GetDocumentMapRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "DocumentMap", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    GetDocumentMapResponse GetDocumentMap(GetDocumentMapRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "DocumentMap", ReplyAction="*")]
-    System.Threading.Tasks.Task<GetDocumentMapResponse> GetDocumentMapAsync(GetDocumentMapRequest request);
-    
-    // CODEGEN: Generating message contract since message LoadDrillthroughTargetRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dDrillthroughTarget", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LoadDrillthroughTargetResponse LoadDrillthroughTarget(LoadDrillthroughTargetRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dDrillthroughTarget", ReplyAction="*")]
-    System.Threading.Tasks.Task<LoadDrillthroughTargetResponse> LoadDrillthroughTargetAsync(LoadDrillthroughTargetRequest request);
-    
-    // CODEGEN: Generating message contract since message LoadDrillthroughTarget2Request has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dDrillthroughTarget2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LoadDrillthroughTarget2Response LoadDrillthroughTarget2(LoadDrillthroughTarget2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Loa" +
-        "dDrillthroughTarget2", ReplyAction="*")]
-    System.Threading.Tasks.Task<LoadDrillthroughTarget2Response> LoadDrillthroughTarget2Async(LoadDrillthroughTarget2Request request);
-    
-    // CODEGEN: Generating message contract since message ToggleItemRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Tog" +
-        "gleItem", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    ToggleItemResponse ToggleItem(ToggleItemRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Tog" +
-        "gleItem", ReplyAction="*")]
-    System.Threading.Tasks.Task<ToggleItemResponse> ToggleItemAsync(ToggleItemRequest request);
-    
-    // CODEGEN: Generating message contract since message NavigateDocumentMapRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
-        "igateDocumentMap", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    NavigateDocumentMapResponse NavigateDocumentMap(NavigateDocumentMapRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
-        "igateDocumentMap", ReplyAction="*")]
-    System.Threading.Tasks.Task<NavigateDocumentMapResponse> NavigateDocumentMapAsync(NavigateDocumentMapRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
-        "igateBookmark", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    NavigateBookmarkResponse NavigateBookmark(NavigateBookmarkRequest request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Nav" +
-        "igateBookmark", ReplyAction="*")]
-    System.Threading.Tasks.Task<NavigateBookmarkResponse> NavigateBookmarkAsync(NavigateBookmarkRequest request);
-    
-    // CODEGEN: Generating message contract since message FindStringRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fin" +
-        "dString", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    FindStringResponse FindString(FindStringRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fin" +
-        "dString", ReplyAction="*")]
-    System.Threading.Tasks.Task<FindStringResponse> FindStringAsync(FindStringRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
-        "t", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    SortResponse Sort(SortRequest request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
-        "t", ReplyAction="*")]
-    System.Threading.Tasks.Task<SortResponse> SortAsync(SortRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
-        "t2", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    Sort2Response Sort2(Sort2Request request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Sor" +
-        "t2", ReplyAction="*")]
-    System.Threading.Tasks.Task<Sort2Response> Sort2Async(Sort2Request request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "RenderResource", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    GetRenderResourceResponse GetRenderResource(GetRenderResourceRequest request);
-    
-    // CODEGEN: Generating message contract since the operation has multiple return values.
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
-        "RenderResource", ReplyAction="*")]
-    System.Threading.Tasks.Task<GetRenderResourceResponse> GetRenderResourceAsync(GetRenderResourceRequest request);
-    
-    // CODEGEN: Generating message contract since message ListRenderingExtensionsRequest has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
-        "tRenderingExtensions", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    ListRenderingExtensionsResponse ListRenderingExtensions(ListRenderingExtensionsRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
-        "tRenderingExtensions", ReplyAction="*")]
-    System.Threading.Tasks.Task<ListRenderingExtensionsResponse> ListRenderingExtensionsAsync(ListRenderingExtensionsRequest request);
-    
-    // CODEGEN: Generating message contract since message LogonUserResponse has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
-        "onUser", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LogonUserResponse LogonUser(LogonUserRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
-        "onUser", ReplyAction="*")]
-    System.Threading.Tasks.Task<LogonUserResponse> LogonUserAsync(LogonUserRequest request);
-    
-    // CODEGEN: Generating message contract since message LogoffResponse has headers
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
-        "off", ReplyAction="*")]
-    [System.ServiceModel.XmlSerializerFormatAttribute()]
-    [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ParameterValueOrFieldReference))]
-    LogoffResponse Logoff(LogoffRequest request);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
-        "off", ReplyAction="*")]
-    System.Threading.Tasks.Task<LogoffResponse> LogoffAsync(LogoffRequest request);
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class TrustedUserHeader
-{
-    
-    private string userNameField;
-    
-    private byte[] userTokenField;
-    
-    private System.Xml.XmlAttribute[] anyAttrField;
-    
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string UserName
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class TrustedUserHeader
     {
-        get
-        {
-            return this.userNameField;
-        }
-        set
+        private string userNameField;
+
+        private byte[] userTokenField;
+
+        private System.Xml.XmlAttribute[] anyAttrField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string UserName
         {
-            this.userNameField = value;
+            get { return this.userNameField; }
+            set { this.userNameField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=1)]
-    public byte[] UserToken
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary", Order = 1)]
+        public byte[] UserToken
         {
-            return this.userTokenField;
+            get { return this.userTokenField; }
+            set { this.userTokenField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAnyAttributeAttribute()]
+        public System.Xml.XmlAttribute[] AnyAttr
         {
-            this.userTokenField = value;
+            get { return this.anyAttrField; }
+            set { this.anyAttrField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlAnyAttributeAttribute()]
-    public System.Xml.XmlAttribute[] AnyAttr
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class Extension
     {
-        get
-        {
-            return this.anyAttrField;
-        }
-        set
+        private ExtensionTypeEnum extensionTypeField;
+
+        private string nameField;
+
+        private string localizedNameField;
+
+        private bool visibleField;
+
+        private bool isModelGenerationSupportedField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public ExtensionTypeEnum ExtensionType
         {
-            this.anyAttrField = value;
+            get { return this.extensionTypeField; }
+            set { this.extensionTypeField = value; }
         }
-    }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class Extension
-{
-    
-    private ExtensionTypeEnum extensionTypeField;
-    
-    private string nameField;
-    
-    private string localizedNameField;
-    
-    private bool visibleField;
-    
-    private bool isModelGenerationSupportedField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public ExtensionTypeEnum ExtensionType
-    {
-        get
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string Name
         {
-            return this.extensionTypeField;
+            get { return this.nameField; }
+            set { this.nameField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public string LocalizedName
         {
-            this.extensionTypeField = value;
+            get { return this.localizedNameField; }
+            set { this.localizedNameField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string Name
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+        public bool Visible
         {
-            return this.nameField;
+            get { return this.visibleField; }
+            set { this.visibleField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+        public bool IsModelGenerationSupported
         {
-            this.nameField = value;
+            get { return this.isModelGenerationSupportedField; }
+            set { this.isModelGenerationSupportedField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public string LocalizedName
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public enum ExtensionTypeEnum
     {
-        get
-        {
-            return this.localizedNameField;
-        }
-        set
-        {
-            this.localizedNameField = value;
-        }
+        /// <remarks/>
+        Delivery,
+
+        /// <remarks/>
+        Render,
+
+        /// <remarks/>
+        Data,
+
+        /// <remarks/>
+        All,
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-    public bool Visible
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class DocumentMapNode
     {
-        get
-        {
-            return this.visibleField;
-        }
-        set
+        private string labelField;
+
+        private string uniqueNameField;
+
+        private DocumentMapNode[] childrenField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string Label
         {
-            this.visibleField = value;
+            get { return this.labelField; }
+            set { this.labelField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-    public bool IsModelGenerationSupported
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string UniqueName
         {
-            return this.isModelGenerationSupportedField;
+            get { return this.uniqueNameField; }
+            set { this.uniqueNameField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 2)]
+        public DocumentMapNode[] Children
         {
-            this.isModelGenerationSupportedField = value;
+            get { return this.childrenField; }
+            set { this.childrenField = value; }
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public enum ExtensionTypeEnum
-{
-    
-    /// <remarks/>
-    Delivery,
-    
-    /// <remarks/>
-    Render,
-    
-    /// <remarks/>
-    Data,
-    
-    /// <remarks/>
-    All,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class DocumentMapNode
-{
-    
-    private string labelField;
-    
-    private string uniqueNameField;
-    
-    private DocumentMapNode[] childrenField;
-    
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string Label
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ParameterValue))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ParameterValueOrFieldReference
     {
-        get
-        {
-            return this.labelField;
-        }
-        set
-        {
-            this.labelField = value;
-        }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string UniqueName
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ParameterValue : ParameterValueOrFieldReference
     {
-        get
-        {
-            return this.uniqueNameField;
-        }
-        set
+        private string nameField;
+
+        private string valueField;
+
+        private string labelField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string Name
         {
-            this.uniqueNameField = value;
+            get { return this.nameField; }
+            set { this.nameField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
-    public DocumentMapNode[] Children
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string Value
         {
-            return this.childrenField;
+            get { return this.valueField; }
+            set { this.valueField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public string Label
         {
-            this.childrenField = value;
+            get { return this.labelField; }
+            set { this.labelField = value; }
         }
     }
-}
 
-/// <remarks/>
-[System.Xml.Serialization.XmlIncludeAttribute(typeof(ParameterValue))]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ParameterValueOrFieldReference
-{
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ParameterValue : ParameterValueOrFieldReference
-{
-    
-    private string nameField;
-    
-    private string valueField;
-    
-    private string labelField;
-    
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string Name
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class DataSourceCredentials
     {
-        get
+        private string dataSourceNameField;
+
+        private string userNameField;
+
+        private string passwordField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string DataSourceName
+        {
+            get { return this.dataSourceNameField; }
+            set { this.dataSourceNameField = value; }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string UserName
         {
-            return this.nameField;
+            get { return this.userNameField; }
+            set { this.userNameField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public string Password
         {
-            this.nameField = value;
+            get { return this.passwordField; }
+            set { this.passwordField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string Value
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class Warning
     {
-        get
+        private string codeField;
+
+        private string severityField;
+
+        private string objectNameField;
+
+        private string objectTypeField;
+
+        private string messageField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string Code
+        {
+            get { return this.codeField; }
+            set { this.codeField = value; }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string Severity
         {
-            return this.valueField;
+            get { return this.severityField; }
+            set { this.severityField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public string ObjectName
         {
-            this.valueField = value;
+            get { return this.objectNameField; }
+            set { this.objectNameField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public string Label
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+        public string ObjectType
         {
-            return this.labelField;
+            get { return this.objectTypeField; }
+            set { this.objectTypeField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+        public string Message
         {
-            this.labelField = value;
+            get { return this.messageField; }
+            set { this.messageField = value; }
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class DataSourceCredentials
-{
-    
-    private string dataSourceNameField;
-    
-    private string userNameField;
-    
-    private string passwordField;
-    
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string DataSourceName
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ExecutionHeader
     {
-        get
+        private string executionIDField;
+
+        private System.Xml.XmlAttribute[] anyAttrField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string ExecutionID
         {
-            return this.dataSourceNameField;
+            get { return this.executionIDField; }
+            set { this.executionIDField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAnyAttributeAttribute()]
+        public System.Xml.XmlAttribute[] AnyAttr
         {
-            this.dataSourceNameField = value;
+            get { return this.anyAttrField; }
+            set { this.anyAttrField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string UserName
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ReportMargins
     {
-        get
+        private double topField;
+
+        private double bottomField;
+
+        private double leftField;
+
+        private double rightField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public double Top
         {
-            return this.userNameField;
+            get { return this.topField; }
+            set { this.topField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public double Bottom
         {
-            this.userNameField = value;
+            get { return this.bottomField; }
+            set { this.bottomField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public string Password
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public double Left
         {
-            return this.passwordField;
+            get { return this.leftField; }
+            set { this.leftField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+        public double Right
         {
-            this.passwordField = value;
+            get { return this.rightField; }
+            set { this.rightField = value; }
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class Warning
-{
-    
-    private string codeField;
-    
-    private string severityField;
-    
-    private string objectNameField;
-    
-    private string objectTypeField;
-    
-    private string messageField;
-    
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string Code
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ReportPaperSize
     {
-        get
+        private double heightField;
+
+        private double widthField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public double Height
         {
-            return this.codeField;
+            get { return this.heightField; }
+            set { this.heightField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public double Width
         {
-            this.codeField = value;
+            get { return this.widthField; }
+            set { this.widthField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string Severity
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class PageSettings
     {
-        get
+        private ReportPaperSize paperSizeField;
+
+        private ReportMargins marginsField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public ReportPaperSize PaperSize
         {
-            return this.severityField;
+            get { return this.paperSizeField; }
+            set { this.paperSizeField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public ReportMargins Margins
         {
-            this.severityField = value;
+            get { return this.marginsField; }
+            set { this.marginsField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public string ObjectName
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class DataSourcePrompt
     {
-        get
+        private string nameField;
+
+        private string dataSourceIDField;
+
+        private string promptField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string Name
+        {
+            get { return this.nameField; }
+            set { this.nameField = value; }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string DataSourceID
         {
-            return this.objectNameField;
+            get { return this.dataSourceIDField; }
+            set { this.dataSourceIDField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public string Prompt
         {
-            this.objectNameField = value;
+            get { return this.promptField; }
+            set { this.promptField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-    public string ObjectType
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ValidValue
     {
-        get
+        private string labelField;
+
+        private string valueField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string Label
         {
-            return this.objectTypeField;
+            get { return this.labelField; }
+            set { this.labelField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string Value
         {
-            this.objectTypeField = value;
+            get { return this.valueField; }
+            set { this.valueField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-    public string Message
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ReportParameter
     {
-        get
+        private string nameField;
+
+        private ParameterTypeEnum typeField;
+
+        private bool typeFieldSpecified;
+
+        private bool nullableField;
+
+        private bool nullableFieldSpecified;
+
+        private bool allowBlankField;
+
+        private bool allowBlankFieldSpecified;
+
+        private bool multiValueField;
+
+        private bool multiValueFieldSpecified;
+
+        private bool queryParameterField;
+
+        private bool queryParameterFieldSpecified;
+
+        private string promptField;
+
+        private bool promptUserField;
+
+        private bool promptUserFieldSpecified;
+
+        private string[] dependenciesField;
+
+        private bool validValuesQueryBasedField;
+
+        private bool validValuesQueryBasedFieldSpecified;
+
+        private ValidValue[] validValuesField;
+
+        private bool defaultValuesQueryBasedField;
+
+        private bool defaultValuesQueryBasedFieldSpecified;
+
+        private string[] defaultValuesField;
+
+        private ParameterStateEnum stateField;
+
+        private bool stateFieldSpecified;
+
+        private string errorMessageField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string Name
         {
-            return this.messageField;
+            get { return this.nameField; }
+            set { this.nameField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public ParameterTypeEnum Type
         {
-            this.messageField = value;
+            get { return this.typeField; }
+            set { this.typeField = value; }
         }
-    }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ExecutionHeader
-{
-    
-    private string executionIDField;
-    
-    private System.Xml.XmlAttribute[] anyAttrField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string ExecutionID
-    {
-        get
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TypeSpecified
         {
-            return this.executionIDField;
+            get { return this.typeFieldSpecified; }
+            set { this.typeFieldSpecified = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public bool Nullable
         {
-            this.executionIDField = value;
+            get { return this.nullableField; }
+            set { this.nullableField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAnyAttributeAttribute()]
-    public System.Xml.XmlAttribute[] AnyAttr
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NullableSpecified
         {
-            return this.anyAttrField;
+            get { return this.nullableFieldSpecified; }
+            set { this.nullableFieldSpecified = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+        public bool AllowBlank
         {
-            this.anyAttrField = value;
+            get { return this.allowBlankField; }
+            set { this.allowBlankField = value; }
         }
-    }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ReportMargins
-{
-    
-    private double topField;
-    
-    private double bottomField;
-    
-    private double leftField;
-    
-    private double rightField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public double Top
-    {
-        get
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AllowBlankSpecified
         {
-            return this.topField;
+            get { return this.allowBlankFieldSpecified; }
+            set { this.allowBlankFieldSpecified = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+        public bool MultiValue
         {
-            this.topField = value;
+            get { return this.multiValueField; }
+            set { this.multiValueField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public double Bottom
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MultiValueSpecified
         {
-            return this.bottomField;
+            get { return this.multiValueFieldSpecified; }
+            set { this.multiValueFieldSpecified = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
+        public bool QueryParameter
         {
-            this.bottomField = value;
+            get { return this.queryParameterField; }
+            set { this.queryParameterField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public double Left
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool QueryParameterSpecified
         {
-            return this.leftField;
+            get { return this.queryParameterFieldSpecified; }
+            set { this.queryParameterFieldSpecified = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
+        public string Prompt
         {
-            this.leftField = value;
+            get { return this.promptField; }
+            set { this.promptField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-    public double Right
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
+        public bool PromptUser
         {
-            return this.rightField;
+            get { return this.promptUserField; }
+            set { this.promptUserField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PromptUserSpecified
         {
-            this.rightField = value;
+            get { return this.promptUserFieldSpecified; }
+            set { this.promptUserFieldSpecified = value; }
         }
-    }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ReportPaperSize
-{
-    
-    private double heightField;
-    
-    private double widthField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public double Height
-    {
-        get
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 8)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Dependency")]
+        public string[] Dependencies
         {
-            return this.heightField;
+            get { return this.dependenciesField; }
+            set { this.dependenciesField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
+        public bool ValidValuesQueryBased
         {
-            this.heightField = value;
+            get { return this.validValuesQueryBasedField; }
+            set { this.validValuesQueryBasedField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public double Width
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ValidValuesQueryBasedSpecified
         {
-            return this.widthField;
+            get { return this.validValuesQueryBasedFieldSpecified; }
+            set { this.validValuesQueryBasedFieldSpecified = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 10)]
+        public ValidValue[] ValidValues
         {
-            this.widthField = value;
+            get { return this.validValuesField; }
+            set { this.validValuesField = value; }
         }
-    }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class PageSettings
-{
-    
-    private ReportPaperSize paperSizeField;
-    
-    private ReportMargins marginsField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public ReportPaperSize PaperSize
-    {
-        get
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 11)]
+        public bool DefaultValuesQueryBased
         {
-            return this.paperSizeField;
+            get { return this.defaultValuesQueryBasedField; }
+            set { this.defaultValuesQueryBasedField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DefaultValuesQueryBasedSpecified
         {
-            this.paperSizeField = value;
+            get { return this.defaultValuesQueryBasedFieldSpecified; }
+            set { this.defaultValuesQueryBasedFieldSpecified = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public ReportMargins Margins
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 12)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Value")]
+        public string[] DefaultValues
         {
-            return this.marginsField;
+            get { return this.defaultValuesField; }
+            set { this.defaultValuesField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 13)]
+        public ParameterStateEnum State
         {
-            this.marginsField = value;
+            get { return this.stateField; }
+            set { this.stateField = value; }
         }
-    }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class DataSourcePrompt
-{
-    
-    private string nameField;
-    
-    private string dataSourceIDField;
-    
-    private string promptField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string Name
-    {
-        get
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool StateSpecified
         {
-            return this.nameField;
+            get { return this.stateFieldSpecified; }
+            set { this.stateFieldSpecified = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 14)]
+        public string ErrorMessage
         {
-            this.nameField = value;
+            get { return this.errorMessageField; }
+            set { this.errorMessageField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string DataSourceID
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public enum ParameterTypeEnum
     {
-        get
-        {
-            return this.dataSourceIDField;
-        }
-        set
-        {
-            this.dataSourceIDField = value;
-        }
+        /// <remarks/>
+        Boolean,
+
+        /// <remarks/>
+        DateTime,
+
+        /// <remarks/>
+        Integer,
+
+        /// <remarks/>
+        Float,
+
+        /// <remarks/>
+        String,
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public string Prompt
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public enum ParameterStateEnum
     {
-        get
-        {
-            return this.promptField;
-        }
-        set
-        {
-            this.promptField = value;
-        }
+        /// <remarks/>
+        HasValidValue,
+
+        /// <remarks/>
+        MissingValidValue,
+
+        /// <remarks/>
+        HasOutstandingDependencies,
+
+        /// <remarks/>
+        DynamicValuesUnavailable,
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ValidValue
-{
-    
-    private string labelField;
-    
-    private string valueField;
-    
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string Label
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecutionInfo2))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ExecutionInfo
     {
-        get
+        private bool hasSnapshotField;
+
+        private bool needsProcessingField;
+
+        private bool allowQueryExecutionField;
+
+        private bool credentialsRequiredField;
+
+        private bool parametersRequiredField;
+
+        private System.DateTime expirationDateTimeField;
+
+        private System.DateTime executionDateTimeField;
+
+        private int numPagesField;
+
+        private ReportParameter[] parametersField;
+
+        private DataSourcePrompt[] dataSourcePromptsField;
+
+        private bool hasDocumentMapField;
+
+        private string executionIDField;
+
+        private string reportPathField;
+
+        private string historyIDField;
+
+        private PageSettings reportPageSettingsField;
+
+        private int autoRefreshIntervalField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public bool HasSnapshot
         {
-            return this.labelField;
+            get { return this.hasSnapshotField; }
+            set { this.hasSnapshotField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public bool NeedsProcessing
         {
-            this.labelField = value;
+            get { return this.needsProcessingField; }
+            set { this.needsProcessingField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string Value
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public bool AllowQueryExecution
         {
-            return this.valueField;
+            get { return this.allowQueryExecutionField; }
+            set { this.allowQueryExecutionField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+        public bool CredentialsRequired
         {
-            this.valueField = value;
+            get { return this.credentialsRequiredField; }
+            set { this.credentialsRequiredField = value; }
         }
-    }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ReportParameter
-{
-    
-    private string nameField;
-    
-    private ParameterTypeEnum typeField;
-    
-    private bool typeFieldSpecified;
-    
-    private bool nullableField;
-    
-    private bool nullableFieldSpecified;
-    
-    private bool allowBlankField;
-    
-    private bool allowBlankFieldSpecified;
-    
-    private bool multiValueField;
-    
-    private bool multiValueFieldSpecified;
-    
-    private bool queryParameterField;
-    
-    private bool queryParameterFieldSpecified;
-    
-    private string promptField;
-    
-    private bool promptUserField;
-    
-    private bool promptUserFieldSpecified;
-    
-    private string[] dependenciesField;
-    
-    private bool validValuesQueryBasedField;
-    
-    private bool validValuesQueryBasedFieldSpecified;
-    
-    private ValidValue[] validValuesField;
-    
-    private bool defaultValuesQueryBasedField;
-    
-    private bool defaultValuesQueryBasedFieldSpecified;
-    
-    private string[] defaultValuesField;
-    
-    private ParameterStateEnum stateField;
-    
-    private bool stateFieldSpecified;
-    
-    private string errorMessageField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string Name
-    {
-        get
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+        public bool ParametersRequired
         {
-            return this.nameField;
+            get { return this.parametersRequiredField; }
+            set { this.parametersRequiredField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
+        public System.DateTime ExpirationDateTime
         {
-            this.nameField = value;
+            get { return this.expirationDateTimeField; }
+            set { this.expirationDateTimeField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public ParameterTypeEnum Type
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
+        public System.DateTime ExecutionDateTime
         {
-            return this.typeField;
+            get { return this.executionDateTimeField; }
+            set { this.executionDateTimeField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
+        public int NumPages
         {
-            this.typeField = value;
+            get { return this.numPagesField; }
+            set { this.numPagesField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool TypeSpecified
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 8)]
+        public ReportParameter[] Parameters
         {
-            return this.typeFieldSpecified;
+            get { return this.parametersField; }
+            set { this.parametersField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 9)]
+        public DataSourcePrompt[] DataSourcePrompts
         {
-            this.typeFieldSpecified = value;
+            get { return this.dataSourcePromptsField; }
+            set { this.dataSourcePromptsField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public bool Nullable
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
+        public bool HasDocumentMap
         {
-            return this.nullableField;
+            get { return this.hasDocumentMapField; }
+            set { this.hasDocumentMapField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 11)]
+        public string ExecutionID
         {
-            this.nullableField = value;
+            get { return this.executionIDField; }
+            set { this.executionIDField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool NullableSpecified
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 12)]
+        public string ReportPath
         {
-            return this.nullableFieldSpecified;
+            get { return this.reportPathField; }
+            set { this.reportPathField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 13)]
+        public string HistoryID
         {
-            this.nullableFieldSpecified = value;
+            get { return this.historyIDField; }
+            set { this.historyIDField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-    public bool AllowBlank
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 14)]
+        public PageSettings ReportPageSettings
         {
-            return this.allowBlankField;
+            get { return this.reportPageSettingsField; }
+            set { this.reportPageSettingsField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 15)]
+        public int AutoRefreshInterval
         {
-            this.allowBlankField = value;
+            get { return this.autoRefreshIntervalField; }
+            set { this.autoRefreshIntervalField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool AllowBlankSpecified
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ExecutionInfo2 : ExecutionInfo
     {
-        get
-        {
-            return this.allowBlankFieldSpecified;
-        }
-        set
+        private PageCountMode pageCountModeField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public PageCountMode PageCountMode
         {
-            this.allowBlankFieldSpecified = value;
+            get { return this.pageCountModeField; }
+            set { this.pageCountModeField = value; }
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-    public bool MultiValue
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public enum PageCountMode
     {
-        get
-        {
-            return this.multiValueField;
-        }
-        set
-        {
-            this.multiValueField = value;
-        }
+        /// <remarks/>
+        Actual,
+
+        /// <remarks/>
+        Estimate,
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool MultiValueSpecified
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public partial class ServerInfoHeader
     {
-        get
+        private string reportServerVersionNumberField;
+
+        private string reportServerEditionField;
+
+        private string reportServerVersionField;
+
+        private string reportServerDateTimeField;
+
+        private System.Xml.XmlAttribute[] anyAttrField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        public string ReportServerVersionNumber
         {
-            return this.multiValueFieldSpecified;
+            get { return this.reportServerVersionNumberField; }
+            set { this.reportServerVersionNumberField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        public string ReportServerEdition
         {
-            this.multiValueFieldSpecified = value;
+            get { return this.reportServerEditionField; }
+            set { this.reportServerEditionField = value; }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-    public bool QueryParameter
-    {
-        get
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        public string ReportServerVersion
+        {
+            get { return this.reportServerVersionField; }
+            set { this.reportServerVersionField = value; }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+        public string ReportServerDateTime
         {
-            return this.queryParameterField;
+            get { return this.reportServerDateTimeField; }
+            set { this.reportServerDateTimeField = value; }
         }
-        set
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAnyAttributeAttribute()]
+        public System.Xml.XmlAttribute[] AnyAttr
         {
-            this.queryParameterField = value;
+            get { return this.anyAttrField; }
+            set { this.anyAttrField = value; }
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool QueryParameterSpecified
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ListSecureMethods", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ListSecureMethodsRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        public ListSecureMethodsRequest()
         {
-            return this.queryParameterFieldSpecified;
         }
-        set
+
+        public ListSecureMethodsRequest(TrustedUserHeader TrustedUserHeader)
         {
-            this.queryParameterFieldSpecified = value;
+            this.TrustedUserHeader = TrustedUserHeader;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-    public string Prompt
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ListSecureMethodsResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ListSecureMethodsResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string[] ListSecureMethodsResult;
+
+        public ListSecureMethodsResponse()
         {
-            return this.promptField;
         }
-        set
+
+        public ListSecureMethodsResponse(ServerInfoHeader ServerInfoHeader, string[] ListSecureMethodsResult)
         {
-            this.promptField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.ListSecureMethodsResult = ListSecureMethodsResult;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-    public bool PromptUser
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReport", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReportRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string Report;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string HistoryID;
+
+        public LoadReportRequest()
         {
-            return this.promptUserField;
         }
-        set
+
+        public LoadReportRequest(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
         {
-            this.promptUserField = value;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Report = Report;
+            this.HistoryID = HistoryID;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool PromptUserSpecified
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReportResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReportResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo executionInfo;
+
+        public LoadReportResponse()
         {
-            return this.promptUserFieldSpecified;
         }
-        set
+
+        public LoadReportResponse(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
         {
-            this.promptUserFieldSpecified = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Order=8)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("Dependency")]
-    public string[] Dependencies
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReport2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReport2Request
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string Report;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string HistoryID;
+
+        public LoadReport2Request()
         {
-            return this.dependenciesField;
         }
-        set
+
+        public LoadReport2Request(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
         {
-            this.dependenciesField = value;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Report = Report;
+            this.HistoryID = HistoryID;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-    public bool ValidValuesQueryBased
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReport2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReport2Response
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo2 executionInfo;
+
+        public LoadReport2Response()
         {
-            return this.validValuesQueryBasedField;
         }
-        set
+
+        public LoadReport2Response(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
         {
-            this.validValuesQueryBasedField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool ValidValuesQueryBasedSpecified
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReportDefinition", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReportDefinitionRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)] [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] Definition;
+
+        public LoadReportDefinitionRequest()
         {
-            return this.validValuesQueryBasedFieldSpecified;
         }
-        set
+
+        public LoadReportDefinitionRequest(TrustedUserHeader TrustedUserHeader, byte[] Definition)
         {
-            this.validValuesQueryBasedFieldSpecified = value;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Definition = Definition;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Order=10)]
-    public ValidValue[] ValidValues
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReportDefinitionResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReportDefinitionResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo executionInfo;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public Warning[] warnings;
+
+        public LoadReportDefinitionResponse()
         {
-            return this.validValuesField;
         }
-        set
+
+        public LoadReportDefinitionResponse(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo, Warning[] warnings)
         {
-            this.validValuesField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
+            this.warnings = warnings;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-    public bool DefaultValuesQueryBased
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReportDefinition2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReportDefinition2Request
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)] [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] Definition;
+
+        public LoadReportDefinition2Request()
         {
-            return this.defaultValuesQueryBasedField;
         }
-        set
+
+        public LoadReportDefinition2Request(TrustedUserHeader TrustedUserHeader, byte[] Definition)
         {
-            this.defaultValuesQueryBasedField = value;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Definition = Definition;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool DefaultValuesQueryBasedSpecified
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadReportDefinition2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadReportDefinition2Response
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo2 executionInfo;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public Warning[] warnings;
+
+        public LoadReportDefinition2Response()
         {
-            return this.defaultValuesQueryBasedFieldSpecified;
         }
-        set
+
+        public LoadReportDefinition2Response(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo, Warning[] warnings)
         {
-            this.defaultValuesQueryBasedFieldSpecified = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
+            this.warnings = warnings;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Order=12)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("Value")]
-    public string[] DefaultValues
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionCredentials", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionCredentialsRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public DataSourceCredentials[] Credentials;
+
+        public SetExecutionCredentialsRequest()
         {
-            return this.defaultValuesField;
         }
-        set
+
+        public SetExecutionCredentialsRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
         {
-            this.defaultValuesField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Credentials = Credentials;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-    public ParameterStateEnum State
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionCredentialsResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionCredentialsResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo executionInfo;
+
+        public SetExecutionCredentialsResponse()
         {
-            return this.stateField;
         }
-        set
+
+        public SetExecutionCredentialsResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
         {
-            this.stateField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool StateSpecified
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionCredentials2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionCredentials2Request
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public DataSourceCredentials[] Credentials;
+
+        public SetExecutionCredentials2Request()
         {
-            return this.stateFieldSpecified;
         }
-        set
+
+        public SetExecutionCredentials2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
         {
-            this.stateFieldSpecified = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Credentials = Credentials;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-    public string ErrorMessage
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionCredentials2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionCredentials2Response
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo2 executionInfo;
+
+        public SetExecutionCredentials2Response()
         {
-            return this.errorMessageField;
         }
-        set
+
+        public SetExecutionCredentials2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
         {
-            this.errorMessageField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public enum ParameterTypeEnum
-{
-    
-    /// <remarks/>
-    Boolean,
-    
-    /// <remarks/>
-    DateTime,
-    
-    /// <remarks/>
-    Integer,
-    
-    /// <remarks/>
-    Float,
-    
-    /// <remarks/>
-    String,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public enum ParameterStateEnum
-{
-    
-    /// <remarks/>
-    HasValidValue,
-    
-    /// <remarks/>
-    MissingValidValue,
-    
-    /// <remarks/>
-    HasOutstandingDependencies,
-    
-    /// <remarks/>
-    DynamicValuesUnavailable,
-}
-
-/// <remarks/>
-[System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecutionInfo2))]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ExecutionInfo
-{
-    
-    private bool hasSnapshotField;
-    
-    private bool needsProcessingField;
-    
-    private bool allowQueryExecutionField;
-    
-    private bool credentialsRequiredField;
-    
-    private bool parametersRequiredField;
-    
-    private System.DateTime expirationDateTimeField;
-    
-    private System.DateTime executionDateTimeField;
-    
-    private int numPagesField;
-    
-    private ReportParameter[] parametersField;
-    
-    private DataSourcePrompt[] dataSourcePromptsField;
-    
-    private bool hasDocumentMapField;
-    
-    private string executionIDField;
-    
-    private string reportPathField;
-    
-    private string historyIDField;
-    
-    private PageSettings reportPageSettingsField;
-    
-    private int autoRefreshIntervalField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public bool HasSnapshot
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionParameters", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionParametersRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ParameterValue[] Parameters;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string ParameterLanguage;
+
+        public SetExecutionParametersRequest()
         {
-            return this.hasSnapshotField;
         }
-        set
+
+        public SetExecutionParametersRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
         {
-            this.hasSnapshotField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Parameters = Parameters;
+            this.ParameterLanguage = ParameterLanguage;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public bool NeedsProcessing
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionParametersResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionParametersResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo executionInfo;
+
+        public SetExecutionParametersResponse()
         {
-            return this.needsProcessingField;
         }
-        set
+
+        public SetExecutionParametersResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
         {
-            this.needsProcessingField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public bool AllowQueryExecution
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionParameters2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionParameters2Request
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ParameterValue[] Parameters;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string ParameterLanguage;
+
+        public SetExecutionParameters2Request()
         {
-            return this.allowQueryExecutionField;
         }
-        set
+
+        public SetExecutionParameters2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
         {
-            this.allowQueryExecutionField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Parameters = Parameters;
+            this.ParameterLanguage = ParameterLanguage;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-    public bool CredentialsRequired
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetExecutionParameters2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SetExecutionParameters2Response
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo2 executionInfo;
+
+        public SetExecutionParameters2Response()
         {
-            return this.credentialsRequiredField;
         }
-        set
+
+        public SetExecutionParameters2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
         {
-            this.credentialsRequiredField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-    public bool ParametersRequired
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ResetExecution", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ResetExecutionRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        public ResetExecutionRequest()
         {
-            return this.parametersRequiredField;
         }
-        set
+
+        public ResetExecutionRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
         {
-            this.parametersRequiredField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-    public System.DateTime ExpirationDateTime
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ResetExecutionResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ResetExecutionResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo executionInfo;
+
+        public ResetExecutionResponse()
         {
-            return this.expirationDateTimeField;
         }
-        set
+
+        public ResetExecutionResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
         {
-            this.expirationDateTimeField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-    public System.DateTime ExecutionDateTime
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ResetExecution2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ResetExecution2Request
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        public ResetExecution2Request()
         {
-            return this.executionDateTimeField;
         }
-        set
+
+        public ResetExecution2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
         {
-            this.executionDateTimeField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-    public int NumPages
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ResetExecution2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ResetExecution2Response
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo2 executionInfo;
+
+        public ResetExecution2Response()
         {
-            return this.numPagesField;
         }
-        set
+
+        public ResetExecution2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
         {
-            this.numPagesField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Order=8)]
-    public ReportParameter[] Parameters
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Render", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class RenderRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string Format;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string DeviceInfo;
+
+        public RenderRequest()
         {
-            return this.parametersField;
         }
-        set
+
+        public RenderRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo)
         {
-            this.parametersField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Format = Format;
+            this.DeviceInfo = DeviceInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Order=9)]
-    public DataSourcePrompt[] DataSourcePrompts
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RenderResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class RenderResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)] [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] Result;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string Extension;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public string MimeType;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 3)]
+        public string Encoding;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 4)]
+        public Warning[] Warnings;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 5)]
+        public string[] StreamIds;
+
+        public RenderResponse()
         {
-            return this.dataSourcePromptsField;
         }
-        set
+
+        public RenderResponse(ServerInfoHeader ServerInfoHeader, byte[] Result, string Extension, string MimeType, string Encoding, Warning[] Warnings, string[] StreamIds)
         {
-            this.dataSourcePromptsField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.Result = Result;
+            this.Extension = Extension;
+            this.MimeType = MimeType;
+            this.Encoding = Encoding;
+            this.Warnings = Warnings;
+            this.StreamIds = StreamIds;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-    public bool HasDocumentMap
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Render2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class Render2Request
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string Format;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string DeviceInfo;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public PageCountMode PaginationMode;
+
+        public Render2Request()
         {
-            return this.hasDocumentMapField;
         }
-        set
+
+        public Render2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, PageCountMode PaginationMode)
         {
-            this.hasDocumentMapField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Format = Format;
+            this.DeviceInfo = DeviceInfo;
+            this.PaginationMode = PaginationMode;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-    public string ExecutionID
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Render2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class Render2Response
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)] [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] Result;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string Extension;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public string MimeType;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 3)]
+        public string Encoding;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 4)]
+        public Warning[] Warnings;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 5)]
+        public string[] StreamIds;
+
+        public Render2Response()
         {
-            return this.executionIDField;
         }
-        set
+
+        public Render2Response(ServerInfoHeader ServerInfoHeader, byte[] Result, string Extension, string MimeType, string Encoding, Warning[] Warnings, string[] StreamIds)
         {
-            this.executionIDField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.Result = Result;
+            this.Extension = Extension;
+            this.MimeType = MimeType;
+            this.Encoding = Encoding;
+            this.Warnings = Warnings;
+            this.StreamIds = StreamIds;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-    public string ReportPath
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RenderStream", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class RenderStreamRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string Format;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string StreamID;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public string DeviceInfo;
+
+        public RenderStreamRequest()
         {
-            return this.reportPathField;
         }
-        set
+
+        public RenderStreamRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string StreamID, string DeviceInfo)
         {
-            this.reportPathField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Format = Format;
+            this.StreamID = StreamID;
+            this.DeviceInfo = DeviceInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-    public string HistoryID
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RenderStreamResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class RenderStreamResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)] [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] Result;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string Encoding;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public string MimeType;
+
+        public RenderStreamResponse()
         {
-            return this.historyIDField;
         }
-        set
+
+        public RenderStreamResponse(ServerInfoHeader ServerInfoHeader, byte[] Result, string Encoding, string MimeType)
         {
-            this.historyIDField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.Result = Result;
+            this.Encoding = Encoding;
+            this.MimeType = MimeType;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-    public PageSettings ReportPageSettings
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetExecutionInfo", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetExecutionInfoRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        public GetExecutionInfoRequest()
         {
-            return this.reportPageSettingsField;
         }
-        set
+
+        public GetExecutionInfoRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
         {
-            this.reportPageSettingsField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=15)]
-    public int AutoRefreshInterval
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetExecutionInfoResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetExecutionInfoResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo executionInfo;
+
+        public GetExecutionInfoResponse()
         {
-            return this.autoRefreshIntervalField;
         }
-        set
+
+        public GetExecutionInfoResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
         {
-            this.autoRefreshIntervalField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ExecutionInfo2 : ExecutionInfo
-{
-    
-    private PageCountMode pageCountModeField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public PageCountMode PageCountMode
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetExecutionInfo2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetExecutionInfo2Request
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        public GetExecutionInfo2Request()
         {
-            return this.pageCountModeField;
         }
-        set
+
+        public GetExecutionInfo2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
         {
-            this.pageCountModeField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public enum PageCountMode
-{
-    
-    /// <remarks/>
-    Actual,
-    
-    /// <remarks/>
-    Estimate,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public partial class ServerInfoHeader
-{
-    
-    private string reportServerVersionNumberField;
-    
-    private string reportServerEditionField;
-    
-    private string reportServerVersionField;
-    
-    private string reportServerDateTimeField;
-    
-    private System.Xml.XmlAttribute[] anyAttrField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-    public string ReportServerVersionNumber
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetExecutionInfo2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetExecutionInfo2Response
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo2 executionInfo;
+
+        public GetExecutionInfo2Response()
         {
-            return this.reportServerVersionNumberField;
         }
-        set
+
+        public GetExecutionInfo2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
         {
-            this.reportServerVersionNumberField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.executionInfo = executionInfo;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-    public string ReportServerEdition
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDocumentMap", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetDocumentMapRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        public GetDocumentMapRequest()
         {
-            return this.reportServerEditionField;
         }
-        set
+
+        public GetDocumentMapRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
         {
-            this.reportServerEditionField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-    public string ReportServerVersion
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDocumentMapResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetDocumentMapResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public DocumentMapNode result;
+
+        public GetDocumentMapResponse()
         {
-            return this.reportServerVersionField;
         }
-        set
+
+        public GetDocumentMapResponse(ServerInfoHeader ServerInfoHeader, DocumentMapNode result)
         {
-            this.reportServerVersionField = value;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.result = result;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-    public string ReportServerDateTime
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadDrillthroughTarget", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadDrillthroughTargetRequest
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string DrillthroughID;
+
+        public LoadDrillthroughTargetRequest()
         {
-            return this.reportServerDateTimeField;
         }
-        set
+
+        public LoadDrillthroughTargetRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
         {
-            this.reportServerDateTimeField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.DrillthroughID = DrillthroughID;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAnyAttributeAttribute()]
-    public System.Xml.XmlAttribute[] AnyAttr
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadDrillthroughTargetResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadDrillthroughTargetResponse
     {
-        get
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo ExecutionInfo;
+
+        public LoadDrillthroughTargetResponse()
         {
-            return this.anyAttrField;
         }
-        set
+
+        public LoadDrillthroughTargetResponse(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo ExecutionInfo)
         {
-            this.anyAttrField = value;
+            this.ExecutionHeader = ExecutionHeader;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.ExecutionInfo = ExecutionInfo;
         }
     }
-}
 
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ListSecureMethods", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ListSecureMethodsRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    public ListSecureMethodsRequest()
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadDrillthroughTarget2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadDrillthroughTarget2Request
     {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string DrillthroughID;
+
+        public LoadDrillthroughTarget2Request()
+        {
+        }
+
+        public LoadDrillthroughTarget2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.DrillthroughID = DrillthroughID;
+        }
     }
-    
-    public ListSecureMethodsRequest(TrustedUserHeader TrustedUserHeader)
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadDrillthroughTarget2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LoadDrillthroughTarget2Response
     {
-        this.TrustedUserHeader = TrustedUserHeader;
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public ExecutionInfo2 ExecutionInfo;
+
+        public LoadDrillthroughTarget2Response()
+        {
+        }
+
+        public LoadDrillthroughTarget2Response(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo2 ExecutionInfo)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.ExecutionInfo = ExecutionInfo;
+        }
     }
-}
 
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ListSecureMethodsResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ListSecureMethodsResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string[] ListSecureMethodsResult;
-    
-    public ListSecureMethodsResponse()
-    {
-    }
-    
-    public ListSecureMethodsResponse(ServerInfoHeader ServerInfoHeader, string[] ListSecureMethodsResult)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.ListSecureMethodsResult = ListSecureMethodsResult;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReport", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReportRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string Report;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string HistoryID;
-    
-    public LoadReportRequest()
-    {
-    }
-    
-    public LoadReportRequest(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
-    {
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Report = Report;
-        this.HistoryID = HistoryID;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReportResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReportResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo executionInfo;
-    
-    public LoadReportResponse()
-    {
-    }
-    
-    public LoadReportResponse(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReport2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReport2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string Report;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string HistoryID;
-    
-    public LoadReport2Request()
-    {
-    }
-    
-    public LoadReport2Request(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
-    {
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Report = Report;
-        this.HistoryID = HistoryID;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReport2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReport2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo2 executionInfo;
-    
-    public LoadReport2Response()
-    {
-    }
-    
-    public LoadReport2Response(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReportDefinition", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReportDefinitionRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-    public byte[] Definition;
-    
-    public LoadReportDefinitionRequest()
-    {
-    }
-    
-    public LoadReportDefinitionRequest(TrustedUserHeader TrustedUserHeader, byte[] Definition)
-    {
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Definition = Definition;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReportDefinitionResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReportDefinitionResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo executionInfo;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public Warning[] warnings;
-    
-    public LoadReportDefinitionResponse()
-    {
-    }
-    
-    public LoadReportDefinitionResponse(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo, Warning[] warnings)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-        this.warnings = warnings;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReportDefinition2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReportDefinition2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-    public byte[] Definition;
-    
-    public LoadReportDefinition2Request()
-    {
-    }
-    
-    public LoadReportDefinition2Request(TrustedUserHeader TrustedUserHeader, byte[] Definition)
-    {
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Definition = Definition;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadReportDefinition2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadReportDefinition2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo2 executionInfo;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public Warning[] warnings;
-    
-    public LoadReportDefinition2Response()
-    {
-    }
-    
-    public LoadReportDefinition2Response(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo, Warning[] warnings)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-        this.warnings = warnings;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionCredentials", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionCredentialsRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public DataSourceCredentials[] Credentials;
-    
-    public SetExecutionCredentialsRequest()
-    {
-    }
-    
-    public SetExecutionCredentialsRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Credentials = Credentials;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionCredentialsResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionCredentialsResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo executionInfo;
-    
-    public SetExecutionCredentialsResponse()
-    {
-    }
-    
-    public SetExecutionCredentialsResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionCredentials2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionCredentials2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public DataSourceCredentials[] Credentials;
-    
-    public SetExecutionCredentials2Request()
-    {
-    }
-    
-    public SetExecutionCredentials2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Credentials = Credentials;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionCredentials2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionCredentials2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo2 executionInfo;
-    
-    public SetExecutionCredentials2Response()
-    {
-    }
-    
-    public SetExecutionCredentials2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionParameters", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionParametersRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ParameterValue[] Parameters;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string ParameterLanguage;
-    
-    public SetExecutionParametersRequest()
-    {
-    }
-    
-    public SetExecutionParametersRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Parameters = Parameters;
-        this.ParameterLanguage = ParameterLanguage;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionParametersResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionParametersResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo executionInfo;
-    
-    public SetExecutionParametersResponse()
-    {
-    }
-    
-    public SetExecutionParametersResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionParameters2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionParameters2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ParameterValue[] Parameters;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string ParameterLanguage;
-    
-    public SetExecutionParameters2Request()
-    {
-    }
-    
-    public SetExecutionParameters2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Parameters = Parameters;
-        this.ParameterLanguage = ParameterLanguage;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SetExecutionParameters2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SetExecutionParameters2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo2 executionInfo;
-    
-    public SetExecutionParameters2Response()
-    {
-    }
-    
-    public SetExecutionParameters2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ResetExecution", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ResetExecutionRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    public ResetExecutionRequest()
-    {
-    }
-    
-    public ResetExecutionRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ResetExecutionResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ResetExecutionResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo executionInfo;
-    
-    public ResetExecutionResponse()
-    {
-    }
-    
-    public ResetExecutionResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ResetExecution2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ResetExecution2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    public ResetExecution2Request()
-    {
-    }
-    
-    public ResetExecution2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ResetExecution2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ResetExecution2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo2 executionInfo;
-    
-    public ResetExecution2Response()
-    {
-    }
-    
-    public ResetExecution2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="Render", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class RenderRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string Format;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string DeviceInfo;
-    
-    public RenderRequest()
-    {
-    }
-    
-    public RenderRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Format = Format;
-        this.DeviceInfo = DeviceInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="RenderResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class RenderResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-    public byte[] Result;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string Extension;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public string MimeType;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=3)]
-    public string Encoding;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=4)]
-    public Warning[] Warnings;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=5)]
-    public string[] StreamIds;
-    
-    public RenderResponse()
-    {
-    }
-    
-    public RenderResponse(ServerInfoHeader ServerInfoHeader, byte[] Result, string Extension, string MimeType, string Encoding, Warning[] Warnings, string[] StreamIds)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.Result = Result;
-        this.Extension = Extension;
-        this.MimeType = MimeType;
-        this.Encoding = Encoding;
-        this.Warnings = Warnings;
-        this.StreamIds = StreamIds;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="Render2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class Render2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string Format;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string DeviceInfo;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public PageCountMode PaginationMode;
-    
-    public Render2Request()
-    {
-    }
-    
-    public Render2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, PageCountMode PaginationMode)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Format = Format;
-        this.DeviceInfo = DeviceInfo;
-        this.PaginationMode = PaginationMode;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="Render2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class Render2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-    public byte[] Result;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string Extension;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public string MimeType;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=3)]
-    public string Encoding;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=4)]
-    public Warning[] Warnings;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=5)]
-    public string[] StreamIds;
-    
-    public Render2Response()
-    {
-    }
-    
-    public Render2Response(ServerInfoHeader ServerInfoHeader, byte[] Result, string Extension, string MimeType, string Encoding, Warning[] Warnings, string[] StreamIds)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.Result = Result;
-        this.Extension = Extension;
-        this.MimeType = MimeType;
-        this.Encoding = Encoding;
-        this.Warnings = Warnings;
-        this.StreamIds = StreamIds;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="RenderStream", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class RenderStreamRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string Format;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string StreamID;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public string DeviceInfo;
-    
-    public RenderStreamRequest()
-    {
-    }
-    
-    public RenderStreamRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string StreamID, string DeviceInfo)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Format = Format;
-        this.StreamID = StreamID;
-        this.DeviceInfo = DeviceInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="RenderStreamResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class RenderStreamResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-    public byte[] Result;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string Encoding;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public string MimeType;
-    
-    public RenderStreamResponse()
-    {
-    }
-    
-    public RenderStreamResponse(ServerInfoHeader ServerInfoHeader, byte[] Result, string Encoding, string MimeType)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.Result = Result;
-        this.Encoding = Encoding;
-        this.MimeType = MimeType;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetExecutionInfo", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetExecutionInfoRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    public GetExecutionInfoRequest()
-    {
-    }
-    
-    public GetExecutionInfoRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetExecutionInfoResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetExecutionInfoResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo executionInfo;
-    
-    public GetExecutionInfoResponse()
-    {
-    }
-    
-    public GetExecutionInfoResponse(ServerInfoHeader ServerInfoHeader, ExecutionInfo executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetExecutionInfo2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetExecutionInfo2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    public GetExecutionInfo2Request()
-    {
-    }
-    
-    public GetExecutionInfo2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetExecutionInfo2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetExecutionInfo2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo2 executionInfo;
-    
-    public GetExecutionInfo2Response()
-    {
-    }
-    
-    public GetExecutionInfo2Response(ServerInfoHeader ServerInfoHeader, ExecutionInfo2 executionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.executionInfo = executionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetDocumentMap", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetDocumentMapRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    public GetDocumentMapRequest()
-    {
-    }
-    
-    public GetDocumentMapRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetDocumentMapResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetDocumentMapResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public DocumentMapNode result;
-    
-    public GetDocumentMapResponse()
-    {
-    }
-    
-    public GetDocumentMapResponse(ServerInfoHeader ServerInfoHeader, DocumentMapNode result)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.result = result;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadDrillthroughTarget", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadDrillthroughTargetRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string DrillthroughID;
-    
-    public LoadDrillthroughTargetRequest()
-    {
-    }
-    
-    public LoadDrillthroughTargetRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.DrillthroughID = DrillthroughID;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadDrillthroughTargetResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadDrillthroughTargetResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo ExecutionInfo;
-    
-    public LoadDrillthroughTargetResponse()
-    {
-    }
-    
-    public LoadDrillthroughTargetResponse(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo ExecutionInfo)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.ExecutionInfo = ExecutionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadDrillthroughTarget2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadDrillthroughTarget2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string DrillthroughID;
-    
-    public LoadDrillthroughTarget2Request()
-    {
-    }
-    
-    public LoadDrillthroughTarget2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.DrillthroughID = DrillthroughID;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LoadDrillthroughTarget2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LoadDrillthroughTarget2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public ExecutionInfo2 ExecutionInfo;
-    
-    public LoadDrillthroughTarget2Response()
-    {
-    }
-    
-    public LoadDrillthroughTarget2Response(ExecutionHeader ExecutionHeader, ServerInfoHeader ServerInfoHeader, ExecutionInfo2 ExecutionInfo)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.ExecutionInfo = ExecutionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ToggleItem", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ToggleItemRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string ToggleID;
-    
-    public ToggleItemRequest()
-    {
-    }
-    
-    public ToggleItemRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string ToggleID)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.ToggleID = ToggleID;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ToggleItemResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ToggleItemResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public bool Found;
-    
-    public ToggleItemResponse()
-    {
-    }
-    
-    public ToggleItemResponse(ServerInfoHeader ServerInfoHeader, bool Found)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.Found = Found;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="NavigateDocumentMap", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class NavigateDocumentMapRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string DocMapID;
-    
-    public NavigateDocumentMapRequest()
-    {
-    }
-    
-    public NavigateDocumentMapRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DocMapID)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.DocMapID = DocMapID;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="NavigateDocumentMapResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class NavigateDocumentMapResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public int PageNumber;
-    
-    public NavigateDocumentMapResponse()
-    {
-    }
-    
-    public NavigateDocumentMapResponse(ServerInfoHeader ServerInfoHeader, int PageNumber)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.PageNumber = PageNumber;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="NavigateBookmark", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class NavigateBookmarkRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string BookmarkID;
-    
-    public NavigateBookmarkRequest()
-    {
-    }
-    
-    public NavigateBookmarkRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string BookmarkID)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.BookmarkID = BookmarkID;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="NavigateBookmarkResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class NavigateBookmarkResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public int PageNumber;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string UniqueName;
-    
-    public NavigateBookmarkResponse()
-    {
-    }
-    
-    public NavigateBookmarkResponse(ServerInfoHeader ServerInfoHeader, int PageNumber, string UniqueName)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.PageNumber = PageNumber;
-        this.UniqueName = UniqueName;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="FindString", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class FindStringRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public int StartPage;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public int EndPage;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public string FindValue;
-    
-    public FindStringRequest()
-    {
-    }
-    
-    public FindStringRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, int StartPage, int EndPage, string FindValue)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.StartPage = StartPage;
-        this.EndPage = EndPage;
-        this.FindValue = FindValue;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="FindStringResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class FindStringResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public int PageNumber;
-    
-    public FindStringResponse()
-    {
-    }
-    
-    public FindStringResponse(ServerInfoHeader ServerInfoHeader, int PageNumber)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.PageNumber = PageNumber;
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-public enum SortDirectionEnum
-{
-    
-    /// <remarks/>
-    None,
-    
-    /// <remarks/>
-    Ascending,
-    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ToggleItem", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ToggleItemRequest
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string ToggleID;
+
+        public ToggleItemRequest()
+        {
+        }
+
+        public ToggleItemRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string ToggleID)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.ToggleID = ToggleID;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ToggleItemResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ToggleItemResponse
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public bool Found;
+
+        public ToggleItemResponse()
+        {
+        }
+
+        public ToggleItemResponse(ServerInfoHeader ServerInfoHeader, bool Found)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.Found = Found;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "NavigateDocumentMap", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class NavigateDocumentMapRequest
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string DocMapID;
+
+        public NavigateDocumentMapRequest()
+        {
+        }
+
+        public NavigateDocumentMapRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DocMapID)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.DocMapID = DocMapID;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "NavigateDocumentMapResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class NavigateDocumentMapResponse
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public int PageNumber;
+
+        public NavigateDocumentMapResponse()
+        {
+        }
+
+        public NavigateDocumentMapResponse(ServerInfoHeader ServerInfoHeader, int PageNumber)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.PageNumber = PageNumber;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "NavigateBookmark", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class NavigateBookmarkRequest
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string BookmarkID;
+
+        public NavigateBookmarkRequest()
+        {
+        }
+
+        public NavigateBookmarkRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string BookmarkID)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.BookmarkID = BookmarkID;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "NavigateBookmarkResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class NavigateBookmarkResponse
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public int PageNumber;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string UniqueName;
+
+        public NavigateBookmarkResponse()
+        {
+        }
+
+        public NavigateBookmarkResponse(ServerInfoHeader ServerInfoHeader, int PageNumber, string UniqueName)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.PageNumber = PageNumber;
+            this.UniqueName = UniqueName;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindString", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class FindStringRequest
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public int StartPage;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public int EndPage;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public string FindValue;
+
+        public FindStringRequest()
+        {
+        }
+
+        public FindStringRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, int StartPage, int EndPage, string FindValue)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.StartPage = StartPage;
+            this.EndPage = EndPage;
+            this.FindValue = FindValue;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindStringResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class FindStringResponse
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public int PageNumber;
+
+        public FindStringResponse()
+        {
+        }
+
+        public FindStringResponse(ServerInfoHeader ServerInfoHeader, int PageNumber)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.PageNumber = PageNumber;
+        }
+    }
+
     /// <remarks/>
-    Descending,
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="Sort", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SortRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string SortItem;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public SortDirectionEnum Direction;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public bool Clear;
-    
-    public SortRequest()
-    {
-    }
-    
-    public SortRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.SortItem = SortItem;
-        this.Direction = Direction;
-        this.Clear = Clear;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="SortResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class SortResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public int PageNumber;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string ReportItem;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public int NumPages;
-    
-    public SortResponse()
-    {
-    }
-    
-    public SortResponse(ServerInfoHeader ServerInfoHeader, int PageNumber, string ReportItem, int NumPages)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.PageNumber = PageNumber;
-        this.ReportItem = ReportItem;
-        this.NumPages = NumPages;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="Sort2", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class Sort2Request
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ExecutionHeader ExecutionHeader;
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string SortItem;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public SortDirectionEnum Direction;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public bool Clear;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=3)]
-    public PageCountMode PaginationMode;
-    
-    public Sort2Request()
-    {
-    }
-    
-    public Sort2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear, PageCountMode PaginationMode)
-    {
-        this.ExecutionHeader = ExecutionHeader;
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.SortItem = SortItem;
-        this.Direction = Direction;
-        this.Clear = Clear;
-        this.PaginationMode = PaginationMode;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="Sort2Response", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class Sort2Response
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public int PageNumber;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string ReportItem;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public ExecutionInfo2 ExecutionInfo;
-    
-    public Sort2Response()
-    {
-    }
-    
-    public Sort2Response(ServerInfoHeader ServerInfoHeader, int PageNumber, string ReportItem, ExecutionInfo2 ExecutionInfo)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.PageNumber = PageNumber;
-        this.ReportItem = ReportItem;
-        this.ExecutionInfo = ExecutionInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetRenderResource", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetRenderResourceRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string Format;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string DeviceInfo;
-    
-    public GetRenderResourceRequest()
-    {
-    }
-    
-    public GetRenderResourceRequest(TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo)
-    {
-        this.TrustedUserHeader = TrustedUserHeader;
-        this.Format = Format;
-        this.DeviceInfo = DeviceInfo;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.MessageContractAttribute(WrapperName="GetRenderResourceResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class GetRenderResourceResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-    public byte[] Result;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string MimeType;
-    
-    public GetRenderResourceResponse()
-    {
-    }
-    
-    public GetRenderResourceResponse(ServerInfoHeader ServerInfoHeader, byte[] Result, string MimeType)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.Result = Result;
-        this.MimeType = MimeType;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ListRenderingExtensions", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ListRenderingExtensionsRequest
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public TrustedUserHeader TrustedUserHeader;
-    
-    public ListRenderingExtensionsRequest()
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+    public enum SortDirectionEnum
     {
+        /// <remarks/>
+        None,
+
+        /// <remarks/>
+        Ascending,
+
+        /// <remarks/>
+        Descending,
     }
-    
-    public ListRenderingExtensionsRequest(TrustedUserHeader TrustedUserHeader)
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Sort", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SortRequest
     {
-        this.TrustedUserHeader = TrustedUserHeader;
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string SortItem;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public SortDirectionEnum Direction;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public bool Clear;
+
+        public SortRequest()
+        {
+        }
+
+        public SortRequest(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.SortItem = SortItem;
+            this.Direction = Direction;
+            this.Clear = Clear;
+        }
     }
-}
 
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="ListRenderingExtensionsResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class ListRenderingExtensionsResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public Extension[] Extensions;
-    
-    public ListRenderingExtensionsResponse()
-    {
-    }
-    
-    public ListRenderingExtensionsResponse(ServerInfoHeader ServerInfoHeader, Extension[] Extensions)
-    {
-        this.ServerInfoHeader = ServerInfoHeader;
-        this.Extensions = Extensions;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LogonUser", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LogonUserRequest
-{
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=0)]
-    public string userName;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=1)]
-    public string password;
-    
-    [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order=2)]
-    public string authority;
-    
-    public LogonUserRequest()
-    {
-    }
-    
-    public LogonUserRequest(string userName, string password, string authority)
-    {
-        this.userName = userName;
-        this.password = password;
-        this.authority = authority;
-    }
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LogonUserResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LogonUserResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    public LogonUserResponse()
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SortResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class SortResponse
     {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public int PageNumber;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string ReportItem;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public int NumPages;
+
+        public SortResponse()
+        {
+        }
+
+        public SortResponse(ServerInfoHeader ServerInfoHeader, int PageNumber, string ReportItem, int NumPages)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.PageNumber = PageNumber;
+            this.ReportItem = ReportItem;
+            this.NumPages = NumPages;
+        }
     }
-    
-    public LogonUserResponse(ServerInfoHeader ServerInfoHeader)
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Sort2", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class Sort2Request
     {
-        this.ServerInfoHeader = ServerInfoHeader;
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ExecutionHeader ExecutionHeader;
+
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string SortItem;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public SortDirectionEnum Direction;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public bool Clear;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 3)]
+        public PageCountMode PaginationMode;
+
+        public Sort2Request()
+        {
+        }
+
+        public Sort2Request(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear, PageCountMode PaginationMode)
+        {
+            this.ExecutionHeader = ExecutionHeader;
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.SortItem = SortItem;
+            this.Direction = Direction;
+            this.Clear = Clear;
+            this.PaginationMode = PaginationMode;
+        }
     }
-}
 
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="Logoff", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LogoffRequest
-{
-    
-    public LogoffRequest()
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Sort2Response", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class Sort2Response
     {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public int PageNumber;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string ReportItem;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public ExecutionInfo2 ExecutionInfo;
+
+        public Sort2Response()
+        {
+        }
+
+        public Sort2Response(ServerInfoHeader ServerInfoHeader, int PageNumber, string ReportItem, ExecutionInfo2 ExecutionInfo)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.PageNumber = PageNumber;
+            this.ReportItem = ReportItem;
+            this.ExecutionInfo = ExecutionInfo;
+        }
     }
-}
 
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-[System.ServiceModel.MessageContractAttribute(WrapperName="LogoffResponse", WrapperNamespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped=true)]
-public partial class LogoffResponse
-{
-    
-    [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
-    public ServerInfoHeader ServerInfoHeader;
-    
-    public LogoffResponse()
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRenderResource", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetRenderResourceRequest
     {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string Format;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string DeviceInfo;
+
+        public GetRenderResourceRequest()
+        {
+        }
+
+        public GetRenderResourceRequest(TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo)
+        {
+            this.TrustedUserHeader = TrustedUserHeader;
+            this.Format = Format;
+            this.DeviceInfo = DeviceInfo;
+        }
     }
-    
-    public LogoffResponse(ServerInfoHeader ServerInfoHeader)
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRenderResourceResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class GetRenderResourceResponse
     {
-        this.ServerInfoHeader = ServerInfoHeader;
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)] [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] Result;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string MimeType;
+
+        public GetRenderResourceResponse()
+        {
+        }
+
+        public GetRenderResourceResponse(ServerInfoHeader ServerInfoHeader, byte[] Result, string MimeType)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.Result = Result;
+            this.MimeType = MimeType;
+        }
     }
-}
 
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public interface ReportExecutionServiceSoapChannel : ReportExecutionServiceSoap, System.ServiceModel.IClientChannel
-{
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public partial class ReportExecutionServiceSoapClient : System.ServiceModel.ClientBase<ReportExecutionServiceSoap>, ReportExecutionServiceSoap
-{
-    
-    public ReportExecutionServiceSoapClient()
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ListRenderingExtensions", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ListRenderingExtensionsRequest
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public TrustedUserHeader TrustedUserHeader;
+
+        public ListRenderingExtensionsRequest()
+        {
+        }
+
+        public ListRenderingExtensionsRequest(TrustedUserHeader TrustedUserHeader)
+        {
+            this.TrustedUserHeader = TrustedUserHeader;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ListRenderingExtensionsResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class ListRenderingExtensionsResponse
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public Extension[] Extensions;
+
+        public ListRenderingExtensionsResponse()
+        {
+        }
+
+        public ListRenderingExtensionsResponse(ServerInfoHeader ServerInfoHeader, Extension[] Extensions)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+            this.Extensions = Extensions;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LogonUser", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LogonUserRequest
     {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 0)]
+        public string userName;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 1)]
+        public string password;
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", Order = 2)]
+        public string authority;
+
+        public LogonUserRequest()
+        {
+        }
+
+        public LogonUserRequest(string userName, string password, string authority)
+        {
+            this.userName = userName;
+            this.password = password;
+            this.authority = authority;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LogonUserResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LogonUserResponse
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        public LogonUserResponse()
+        {
+        }
+
+        public LogonUserResponse(ServerInfoHeader ServerInfoHeader)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Logoff", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LogoffRequest
+    {
+        public LogoffRequest()
+        {
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LogoffResponse", WrapperNamespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices", IsWrapped = true)]
+    public partial class LogoffResponse
+    {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")]
+        public ServerInfoHeader ServerInfoHeader;
+
+        public LogoffResponse()
+        {
+        }
+
+        public LogoffResponse(ServerInfoHeader ServerInfoHeader)
+        {
+            this.ServerInfoHeader = ServerInfoHeader;
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface ReportExecutionServiceSoapChannel : ReportExecutionServiceSoap, System.ServiceModel.IClientChannel
+    {
     }
-    
-    public ReportExecutionServiceSoapClient(string endpointConfigurationName) : 
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class ReportExecutionServiceSoapClient : System.ServiceModel.ClientBase<ReportExecutionServiceSoap>, ReportExecutionServiceSoap
+    {
+        public ReportExecutionServiceSoapClient()
+        {
+        }
+
+        public ReportExecutionServiceSoapClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
-    {
-    }
-    
-    public ReportExecutionServiceSoapClient(string endpointConfigurationName, string remoteAddress) : 
+        {
+        }
+
+        public ReportExecutionServiceSoapClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
-    {
-    }
-    
-    public ReportExecutionServiceSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        {
+        }
+
+        public ReportExecutionServiceSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
-    {
-    }
-    
-    public ReportExecutionServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        {
+        }
+
+        public ReportExecutionServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
-    {
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    ListSecureMethodsResponse ReportExecutionServiceSoap.ListSecureMethods(ListSecureMethodsRequest request)
-    {
-        return base.Channel.ListSecureMethods(request);
-    }
-    
-    public ServerInfoHeader ListSecureMethods(TrustedUserHeader TrustedUserHeader, out string[] ListSecureMethodsResult)
-    {
-        ListSecureMethodsRequest inValue = new ListSecureMethodsRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        ListSecureMethodsResponse retVal = ((ReportExecutionServiceSoap)(this)).ListSecureMethods(inValue);
-        ListSecureMethodsResult = retVal.ListSecureMethodsResult;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<ListSecureMethodsResponse> ReportExecutionServiceSoap.ListSecureMethodsAsync(ListSecureMethodsRequest request)
-    {
-        return base.Channel.ListSecureMethodsAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<ListSecureMethodsResponse> ListSecureMethodsAsync(TrustedUserHeader TrustedUserHeader)
-    {
-        ListSecureMethodsRequest inValue = new ListSecureMethodsRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        return ((ReportExecutionServiceSoap)(this)).ListSecureMethodsAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LoadReportResponse ReportExecutionServiceSoap.LoadReport(LoadReportRequest request)
-    {
-        return base.Channel.LoadReport(request);
-    }
-    
-    public ExecutionHeader LoadReport(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo executionInfo)
-    {
-        LoadReportRequest inValue = new LoadReportRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Report = Report;
-        inValue.HistoryID = HistoryID;
-        LoadReportResponse retVal = ((ReportExecutionServiceSoap)(this)).LoadReport(inValue);
-        ServerInfoHeader = retVal.ServerInfoHeader;
-        executionInfo = retVal.executionInfo;
-        return retVal.ExecutionHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<LoadReportResponse> ReportExecutionServiceSoap.LoadReportAsync(LoadReportRequest request)
-    {
-        return base.Channel.LoadReportAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<LoadReportResponse> LoadReportAsync(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
-    {
-        LoadReportRequest inValue = new LoadReportRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Report = Report;
-        inValue.HistoryID = HistoryID;
-        return ((ReportExecutionServiceSoap)(this)).LoadReportAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LoadReport2Response ReportExecutionServiceSoap.LoadReport2(LoadReport2Request request)
-    {
-        return base.Channel.LoadReport2(request);
-    }
-    
-    public ExecutionHeader LoadReport2(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo2 executionInfo)
-    {
-        LoadReport2Request inValue = new LoadReport2Request();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Report = Report;
-        inValue.HistoryID = HistoryID;
-        LoadReport2Response retVal = ((ReportExecutionServiceSoap)(this)).LoadReport2(inValue);
-        ServerInfoHeader = retVal.ServerInfoHeader;
-        executionInfo = retVal.executionInfo;
-        return retVal.ExecutionHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<LoadReport2Response> ReportExecutionServiceSoap.LoadReport2Async(LoadReport2Request request)
-    {
-        return base.Channel.LoadReport2Async(request);
-    }
-    
-    public System.Threading.Tasks.Task<LoadReport2Response> LoadReport2Async(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
-    {
-        LoadReport2Request inValue = new LoadReport2Request();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Report = Report;
-        inValue.HistoryID = HistoryID;
-        return ((ReportExecutionServiceSoap)(this)).LoadReport2Async(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LoadReportDefinitionResponse ReportExecutionServiceSoap.LoadReportDefinition(LoadReportDefinitionRequest request)
-    {
-        return base.Channel.LoadReportDefinition(request);
-    }
-    
-    public ExecutionHeader LoadReportDefinition(TrustedUserHeader TrustedUserHeader, byte[] Definition, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo executionInfo, out Warning[] warnings)
-    {
-        LoadReportDefinitionRequest inValue = new LoadReportDefinitionRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Definition = Definition;
-        LoadReportDefinitionResponse retVal = ((ReportExecutionServiceSoap)(this)).LoadReportDefinition(inValue);
-        ServerInfoHeader = retVal.ServerInfoHeader;
-        executionInfo = retVal.executionInfo;
-        warnings = retVal.warnings;
-        return retVal.ExecutionHeader;
-    }
-    
-    public System.Threading.Tasks.Task<LoadReportDefinitionResponse> LoadReportDefinitionAsync(LoadReportDefinitionRequest request)
-    {
-        return base.Channel.LoadReportDefinitionAsync(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LoadReportDefinition2Response ReportExecutionServiceSoap.LoadReportDefinition2(LoadReportDefinition2Request request)
-    {
-        return base.Channel.LoadReportDefinition2(request);
-    }
-    
-    public ExecutionHeader LoadReportDefinition2(TrustedUserHeader TrustedUserHeader, byte[] Definition, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo2 executionInfo, out Warning[] warnings)
-    {
-        LoadReportDefinition2Request inValue = new LoadReportDefinition2Request();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Definition = Definition;
-        LoadReportDefinition2Response retVal = ((ReportExecutionServiceSoap)(this)).LoadReportDefinition2(inValue);
-        ServerInfoHeader = retVal.ServerInfoHeader;
-        executionInfo = retVal.executionInfo;
-        warnings = retVal.warnings;
-        return retVal.ExecutionHeader;
-    }
-    
-    public System.Threading.Tasks.Task<LoadReportDefinition2Response> LoadReportDefinition2Async(LoadReportDefinition2Request request)
-    {
-        return base.Channel.LoadReportDefinition2Async(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    SetExecutionCredentialsResponse ReportExecutionServiceSoap.SetExecutionCredentials(SetExecutionCredentialsRequest request)
-    {
-        return base.Channel.SetExecutionCredentials(request);
-    }
-    
-    public ServerInfoHeader SetExecutionCredentials(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials, out ExecutionInfo executionInfo)
-    {
-        SetExecutionCredentialsRequest inValue = new SetExecutionCredentialsRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Credentials = Credentials;
-        SetExecutionCredentialsResponse retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionCredentials(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<SetExecutionCredentialsResponse> ReportExecutionServiceSoap.SetExecutionCredentialsAsync(SetExecutionCredentialsRequest request)
-    {
-        return base.Channel.SetExecutionCredentialsAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<SetExecutionCredentialsResponse> SetExecutionCredentialsAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
-    {
-        SetExecutionCredentialsRequest inValue = new SetExecutionCredentialsRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Credentials = Credentials;
-        return ((ReportExecutionServiceSoap)(this)).SetExecutionCredentialsAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    SetExecutionCredentials2Response ReportExecutionServiceSoap.SetExecutionCredentials2(SetExecutionCredentials2Request request)
-    {
-        return base.Channel.SetExecutionCredentials2(request);
-    }
-    
-    public ServerInfoHeader SetExecutionCredentials2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials, out ExecutionInfo2 executionInfo)
-    {
-        SetExecutionCredentials2Request inValue = new SetExecutionCredentials2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Credentials = Credentials;
-        SetExecutionCredentials2Response retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionCredentials2(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<SetExecutionCredentials2Response> ReportExecutionServiceSoap.SetExecutionCredentials2Async(SetExecutionCredentials2Request request)
-    {
-        return base.Channel.SetExecutionCredentials2Async(request);
-    }
-    
-    public System.Threading.Tasks.Task<SetExecutionCredentials2Response> SetExecutionCredentials2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
-    {
-        SetExecutionCredentials2Request inValue = new SetExecutionCredentials2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Credentials = Credentials;
-        return ((ReportExecutionServiceSoap)(this)).SetExecutionCredentials2Async(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    SetExecutionParametersResponse ReportExecutionServiceSoap.SetExecutionParameters(SetExecutionParametersRequest request)
-    {
-        return base.Channel.SetExecutionParameters(request);
-    }
-    
-    public ServerInfoHeader SetExecutionParameters(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage, out ExecutionInfo executionInfo)
-    {
-        SetExecutionParametersRequest inValue = new SetExecutionParametersRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Parameters = Parameters;
-        inValue.ParameterLanguage = ParameterLanguage;
-        SetExecutionParametersResponse retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionParameters(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<SetExecutionParametersResponse> ReportExecutionServiceSoap.SetExecutionParametersAsync(SetExecutionParametersRequest request)
-    {
-        return base.Channel.SetExecutionParametersAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<SetExecutionParametersResponse> SetExecutionParametersAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
-    {
-        SetExecutionParametersRequest inValue = new SetExecutionParametersRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Parameters = Parameters;
-        inValue.ParameterLanguage = ParameterLanguage;
-        return ((ReportExecutionServiceSoap)(this)).SetExecutionParametersAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    SetExecutionParameters2Response ReportExecutionServiceSoap.SetExecutionParameters2(SetExecutionParameters2Request request)
-    {
-        return base.Channel.SetExecutionParameters2(request);
-    }
-    
-    public ServerInfoHeader SetExecutionParameters2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage, out ExecutionInfo2 executionInfo)
-    {
-        SetExecutionParameters2Request inValue = new SetExecutionParameters2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Parameters = Parameters;
-        inValue.ParameterLanguage = ParameterLanguage;
-        SetExecutionParameters2Response retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionParameters2(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<SetExecutionParameters2Response> ReportExecutionServiceSoap.SetExecutionParameters2Async(SetExecutionParameters2Request request)
-    {
-        return base.Channel.SetExecutionParameters2Async(request);
-    }
-    
-    public System.Threading.Tasks.Task<SetExecutionParameters2Response> SetExecutionParameters2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
-    {
-        SetExecutionParameters2Request inValue = new SetExecutionParameters2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Parameters = Parameters;
-        inValue.ParameterLanguage = ParameterLanguage;
-        return ((ReportExecutionServiceSoap)(this)).SetExecutionParameters2Async(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    ResetExecutionResponse ReportExecutionServiceSoap.ResetExecution(ResetExecutionRequest request)
-    {
-        return base.Channel.ResetExecution(request);
-    }
-    
-    public ServerInfoHeader ResetExecution(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo executionInfo)
-    {
-        ResetExecutionRequest inValue = new ResetExecutionRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        ResetExecutionResponse retVal = ((ReportExecutionServiceSoap)(this)).ResetExecution(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<ResetExecutionResponse> ReportExecutionServiceSoap.ResetExecutionAsync(ResetExecutionRequest request)
-    {
-        return base.Channel.ResetExecutionAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<ResetExecutionResponse> ResetExecutionAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        ResetExecutionRequest inValue = new ResetExecutionRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        return ((ReportExecutionServiceSoap)(this)).ResetExecutionAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    ResetExecution2Response ReportExecutionServiceSoap.ResetExecution2(ResetExecution2Request request)
-    {
-        return base.Channel.ResetExecution2(request);
-    }
-    
-    public ServerInfoHeader ResetExecution2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo2 executionInfo)
-    {
-        ResetExecution2Request inValue = new ResetExecution2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        ResetExecution2Response retVal = ((ReportExecutionServiceSoap)(this)).ResetExecution2(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<ResetExecution2Response> ReportExecutionServiceSoap.ResetExecution2Async(ResetExecution2Request request)
-    {
-        return base.Channel.ResetExecution2Async(request);
-    }
-    
-    public System.Threading.Tasks.Task<ResetExecution2Response> ResetExecution2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        ResetExecution2Request inValue = new ResetExecution2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        return ((ReportExecutionServiceSoap)(this)).ResetExecution2Async(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    RenderResponse ReportExecutionServiceSoap.Render(RenderRequest request)
-    {
-        return base.Channel.Render(request);
-    }
-    
-    public ServerInfoHeader Render(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, out byte[] Result, out string Extension, out string MimeType, out string Encoding, out Warning[] Warnings, out string[] StreamIds)
-    {
-        RenderRequest inValue = new RenderRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Format = Format;
-        inValue.DeviceInfo = DeviceInfo;
-        RenderResponse retVal = ((ReportExecutionServiceSoap)(this)).Render(inValue);
-        Result = retVal.Result;
-        Extension = retVal.Extension;
-        MimeType = retVal.MimeType;
-        Encoding = retVal.Encoding;
-        Warnings = retVal.Warnings;
-        StreamIds = retVal.StreamIds;
-        return retVal.ServerInfoHeader;
-    }
-    
-    public System.Threading.Tasks.Task<RenderResponse> RenderAsync(RenderRequest request)
-    {
-        return base.Channel.RenderAsync(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    Render2Response ReportExecutionServiceSoap.Render2(Render2Request request)
-    {
-        return base.Channel.Render2(request);
-    }
-    
-    public ServerInfoHeader Render2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, PageCountMode PaginationMode, out byte[] Result, out string Extension, out string MimeType, out string Encoding, out Warning[] Warnings, out string[] StreamIds)
-    {
-        Render2Request inValue = new Render2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Format = Format;
-        inValue.DeviceInfo = DeviceInfo;
-        inValue.PaginationMode = PaginationMode;
-        Render2Response retVal = ((ReportExecutionServiceSoap)(this)).Render2(inValue);
-        Result = retVal.Result;
-        Extension = retVal.Extension;
-        MimeType = retVal.MimeType;
-        Encoding = retVal.Encoding;
-        Warnings = retVal.Warnings;
-        StreamIds = retVal.StreamIds;
-        return retVal.ServerInfoHeader;
-    }
-    
-    public System.Threading.Tasks.Task<Render2Response> Render2Async(Render2Request request)
-    {
-        return base.Channel.Render2Async(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    RenderStreamResponse ReportExecutionServiceSoap.RenderStream(RenderStreamRequest request)
-    {
-        return base.Channel.RenderStream(request);
-    }
-    
-    public ServerInfoHeader RenderStream(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string StreamID, string DeviceInfo, out byte[] Result, out string Encoding, out string MimeType)
-    {
-        RenderStreamRequest inValue = new RenderStreamRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Format = Format;
-        inValue.StreamID = StreamID;
-        inValue.DeviceInfo = DeviceInfo;
-        RenderStreamResponse retVal = ((ReportExecutionServiceSoap)(this)).RenderStream(inValue);
-        Result = retVal.Result;
-        Encoding = retVal.Encoding;
-        MimeType = retVal.MimeType;
-        return retVal.ServerInfoHeader;
-    }
-    
-    public System.Threading.Tasks.Task<RenderStreamResponse> RenderStreamAsync(RenderStreamRequest request)
-    {
-        return base.Channel.RenderStreamAsync(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    GetExecutionInfoResponse ReportExecutionServiceSoap.GetExecutionInfo(GetExecutionInfoRequest request)
-    {
-        return base.Channel.GetExecutionInfo(request);
-    }
-    
-    public ServerInfoHeader GetExecutionInfo(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo executionInfo)
-    {
-        GetExecutionInfoRequest inValue = new GetExecutionInfoRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        GetExecutionInfoResponse retVal = ((ReportExecutionServiceSoap)(this)).GetExecutionInfo(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<GetExecutionInfoResponse> ReportExecutionServiceSoap.GetExecutionInfoAsync(GetExecutionInfoRequest request)
-    {
-        return base.Channel.GetExecutionInfoAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<GetExecutionInfoResponse> GetExecutionInfoAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        GetExecutionInfoRequest inValue = new GetExecutionInfoRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        return ((ReportExecutionServiceSoap)(this)).GetExecutionInfoAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    GetExecutionInfo2Response ReportExecutionServiceSoap.GetExecutionInfo2(GetExecutionInfo2Request request)
-    {
-        return base.Channel.GetExecutionInfo2(request);
-    }
-    
-    public ServerInfoHeader GetExecutionInfo2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo2 executionInfo)
-    {
-        GetExecutionInfo2Request inValue = new GetExecutionInfo2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        GetExecutionInfo2Response retVal = ((ReportExecutionServiceSoap)(this)).GetExecutionInfo2(inValue);
-        executionInfo = retVal.executionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<GetExecutionInfo2Response> ReportExecutionServiceSoap.GetExecutionInfo2Async(GetExecutionInfo2Request request)
-    {
-        return base.Channel.GetExecutionInfo2Async(request);
-    }
-    
-    public System.Threading.Tasks.Task<GetExecutionInfo2Response> GetExecutionInfo2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        GetExecutionInfo2Request inValue = new GetExecutionInfo2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        return ((ReportExecutionServiceSoap)(this)).GetExecutionInfo2Async(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    GetDocumentMapResponse ReportExecutionServiceSoap.GetDocumentMap(GetDocumentMapRequest request)
-    {
-        return base.Channel.GetDocumentMap(request);
-    }
-    
-    public ServerInfoHeader GetDocumentMap(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out DocumentMapNode result)
-    {
-        GetDocumentMapRequest inValue = new GetDocumentMapRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        GetDocumentMapResponse retVal = ((ReportExecutionServiceSoap)(this)).GetDocumentMap(inValue);
-        result = retVal.result;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<GetDocumentMapResponse> ReportExecutionServiceSoap.GetDocumentMapAsync(GetDocumentMapRequest request)
-    {
-        return base.Channel.GetDocumentMapAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<GetDocumentMapResponse> GetDocumentMapAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
-    {
-        GetDocumentMapRequest inValue = new GetDocumentMapRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        return ((ReportExecutionServiceSoap)(this)).GetDocumentMapAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LoadDrillthroughTargetResponse ReportExecutionServiceSoap.LoadDrillthroughTarget(LoadDrillthroughTargetRequest request)
-    {
-        return base.Channel.LoadDrillthroughTarget(request);
-    }
-    
-    public ServerInfoHeader LoadDrillthroughTarget(ref ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID, out ExecutionInfo ExecutionInfo)
-    {
-        LoadDrillthroughTargetRequest inValue = new LoadDrillthroughTargetRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.DrillthroughID = DrillthroughID;
-        LoadDrillthroughTargetResponse retVal = ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTarget(inValue);
-        ExecutionHeader = retVal.ExecutionHeader;
-        ExecutionInfo = retVal.ExecutionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<LoadDrillthroughTargetResponse> ReportExecutionServiceSoap.LoadDrillthroughTargetAsync(LoadDrillthroughTargetRequest request)
-    {
-        return base.Channel.LoadDrillthroughTargetAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<LoadDrillthroughTargetResponse> LoadDrillthroughTargetAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
-    {
-        LoadDrillthroughTargetRequest inValue = new LoadDrillthroughTargetRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.DrillthroughID = DrillthroughID;
-        return ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTargetAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LoadDrillthroughTarget2Response ReportExecutionServiceSoap.LoadDrillthroughTarget2(LoadDrillthroughTarget2Request request)
-    {
-        return base.Channel.LoadDrillthroughTarget2(request);
-    }
-    
-    public ServerInfoHeader LoadDrillthroughTarget2(ref ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID, out ExecutionInfo2 ExecutionInfo)
-    {
-        LoadDrillthroughTarget2Request inValue = new LoadDrillthroughTarget2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.DrillthroughID = DrillthroughID;
-        LoadDrillthroughTarget2Response retVal = ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTarget2(inValue);
-        ExecutionHeader = retVal.ExecutionHeader;
-        ExecutionInfo = retVal.ExecutionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<LoadDrillthroughTarget2Response> ReportExecutionServiceSoap.LoadDrillthroughTarget2Async(LoadDrillthroughTarget2Request request)
-    {
-        return base.Channel.LoadDrillthroughTarget2Async(request);
-    }
-    
-    public System.Threading.Tasks.Task<LoadDrillthroughTarget2Response> LoadDrillthroughTarget2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
-    {
-        LoadDrillthroughTarget2Request inValue = new LoadDrillthroughTarget2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.DrillthroughID = DrillthroughID;
-        return ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTarget2Async(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    ToggleItemResponse ReportExecutionServiceSoap.ToggleItem(ToggleItemRequest request)
-    {
-        return base.Channel.ToggleItem(request);
-    }
-    
-    public ServerInfoHeader ToggleItem(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string ToggleID, out bool Found)
-    {
-        ToggleItemRequest inValue = new ToggleItemRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.ToggleID = ToggleID;
-        ToggleItemResponse retVal = ((ReportExecutionServiceSoap)(this)).ToggleItem(inValue);
-        Found = retVal.Found;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<ToggleItemResponse> ReportExecutionServiceSoap.ToggleItemAsync(ToggleItemRequest request)
-    {
-        return base.Channel.ToggleItemAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<ToggleItemResponse> ToggleItemAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string ToggleID)
-    {
-        ToggleItemRequest inValue = new ToggleItemRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.ToggleID = ToggleID;
-        return ((ReportExecutionServiceSoap)(this)).ToggleItemAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    NavigateDocumentMapResponse ReportExecutionServiceSoap.NavigateDocumentMap(NavigateDocumentMapRequest request)
-    {
-        return base.Channel.NavigateDocumentMap(request);
-    }
-    
-    public ServerInfoHeader NavigateDocumentMap(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DocMapID, out int PageNumber)
-    {
-        NavigateDocumentMapRequest inValue = new NavigateDocumentMapRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.DocMapID = DocMapID;
-        NavigateDocumentMapResponse retVal = ((ReportExecutionServiceSoap)(this)).NavigateDocumentMap(inValue);
-        PageNumber = retVal.PageNumber;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<NavigateDocumentMapResponse> ReportExecutionServiceSoap.NavigateDocumentMapAsync(NavigateDocumentMapRequest request)
-    {
-        return base.Channel.NavigateDocumentMapAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<NavigateDocumentMapResponse> NavigateDocumentMapAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DocMapID)
-    {
-        NavigateDocumentMapRequest inValue = new NavigateDocumentMapRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.DocMapID = DocMapID;
-        return ((ReportExecutionServiceSoap)(this)).NavigateDocumentMapAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    NavigateBookmarkResponse ReportExecutionServiceSoap.NavigateBookmark(NavigateBookmarkRequest request)
-    {
-        return base.Channel.NavigateBookmark(request);
-    }
-    
-    public ServerInfoHeader NavigateBookmark(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string BookmarkID, out int PageNumber, out string UniqueName)
-    {
-        NavigateBookmarkRequest inValue = new NavigateBookmarkRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.BookmarkID = BookmarkID;
-        NavigateBookmarkResponse retVal = ((ReportExecutionServiceSoap)(this)).NavigateBookmark(inValue);
-        PageNumber = retVal.PageNumber;
-        UniqueName = retVal.UniqueName;
-        return retVal.ServerInfoHeader;
-    }
-    
-    public System.Threading.Tasks.Task<NavigateBookmarkResponse> NavigateBookmarkAsync(NavigateBookmarkRequest request)
-    {
-        return base.Channel.NavigateBookmarkAsync(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    FindStringResponse ReportExecutionServiceSoap.FindString(FindStringRequest request)
-    {
-        return base.Channel.FindString(request);
-    }
-    
-    public ServerInfoHeader FindString(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, int StartPage, int EndPage, string FindValue, out int PageNumber)
-    {
-        FindStringRequest inValue = new FindStringRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.StartPage = StartPage;
-        inValue.EndPage = EndPage;
-        inValue.FindValue = FindValue;
-        FindStringResponse retVal = ((ReportExecutionServiceSoap)(this)).FindString(inValue);
-        PageNumber = retVal.PageNumber;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<FindStringResponse> ReportExecutionServiceSoap.FindStringAsync(FindStringRequest request)
-    {
-        return base.Channel.FindStringAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<FindStringResponse> FindStringAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, int StartPage, int EndPage, string FindValue)
-    {
-        FindStringRequest inValue = new FindStringRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.StartPage = StartPage;
-        inValue.EndPage = EndPage;
-        inValue.FindValue = FindValue;
-        return ((ReportExecutionServiceSoap)(this)).FindStringAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    SortResponse ReportExecutionServiceSoap.Sort(SortRequest request)
-    {
-        return base.Channel.Sort(request);
-    }
-    
-    public ServerInfoHeader Sort(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear, out int PageNumber, out string ReportItem, out int NumPages)
-    {
-        SortRequest inValue = new SortRequest();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.SortItem = SortItem;
-        inValue.Direction = Direction;
-        inValue.Clear = Clear;
-        SortResponse retVal = ((ReportExecutionServiceSoap)(this)).Sort(inValue);
-        PageNumber = retVal.PageNumber;
-        ReportItem = retVal.ReportItem;
-        NumPages = retVal.NumPages;
-        return retVal.ServerInfoHeader;
-    }
-    
-    public System.Threading.Tasks.Task<SortResponse> SortAsync(SortRequest request)
-    {
-        return base.Channel.SortAsync(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    Sort2Response ReportExecutionServiceSoap.Sort2(Sort2Request request)
-    {
-        return base.Channel.Sort2(request);
-    }
-    
-    public ServerInfoHeader Sort2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear, PageCountMode PaginationMode, out int PageNumber, out string ReportItem, out ExecutionInfo2 ExecutionInfo)
-    {
-        Sort2Request inValue = new Sort2Request();
-        inValue.ExecutionHeader = ExecutionHeader;
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.SortItem = SortItem;
-        inValue.Direction = Direction;
-        inValue.Clear = Clear;
-        inValue.PaginationMode = PaginationMode;
-        Sort2Response retVal = ((ReportExecutionServiceSoap)(this)).Sort2(inValue);
-        PageNumber = retVal.PageNumber;
-        ReportItem = retVal.ReportItem;
-        ExecutionInfo = retVal.ExecutionInfo;
-        return retVal.ServerInfoHeader;
-    }
-    
-    public System.Threading.Tasks.Task<Sort2Response> Sort2Async(Sort2Request request)
-    {
-        return base.Channel.Sort2Async(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    GetRenderResourceResponse ReportExecutionServiceSoap.GetRenderResource(GetRenderResourceRequest request)
-    {
-        return base.Channel.GetRenderResource(request);
-    }
-    
-    public ServerInfoHeader GetRenderResource(TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, out byte[] Result, out string MimeType)
-    {
-        GetRenderResourceRequest inValue = new GetRenderResourceRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        inValue.Format = Format;
-        inValue.DeviceInfo = DeviceInfo;
-        GetRenderResourceResponse retVal = ((ReportExecutionServiceSoap)(this)).GetRenderResource(inValue);
-        Result = retVal.Result;
-        MimeType = retVal.MimeType;
-        return retVal.ServerInfoHeader;
-    }
-    
-    public System.Threading.Tasks.Task<GetRenderResourceResponse> GetRenderResourceAsync(GetRenderResourceRequest request)
-    {
-        return base.Channel.GetRenderResourceAsync(request);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    ListRenderingExtensionsResponse ReportExecutionServiceSoap.ListRenderingExtensions(ListRenderingExtensionsRequest request)
-    {
-        return base.Channel.ListRenderingExtensions(request);
-    }
-    
-    public ServerInfoHeader ListRenderingExtensions(TrustedUserHeader TrustedUserHeader, out Extension[] Extensions)
-    {
-        ListRenderingExtensionsRequest inValue = new ListRenderingExtensionsRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        ListRenderingExtensionsResponse retVal = ((ReportExecutionServiceSoap)(this)).ListRenderingExtensions(inValue);
-        Extensions = retVal.Extensions;
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<ListRenderingExtensionsResponse> ReportExecutionServiceSoap.ListRenderingExtensionsAsync(ListRenderingExtensionsRequest request)
-    {
-        return base.Channel.ListRenderingExtensionsAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<ListRenderingExtensionsResponse> ListRenderingExtensionsAsync(TrustedUserHeader TrustedUserHeader)
-    {
-        ListRenderingExtensionsRequest inValue = new ListRenderingExtensionsRequest();
-        inValue.TrustedUserHeader = TrustedUserHeader;
-        return ((ReportExecutionServiceSoap)(this)).ListRenderingExtensionsAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LogonUserResponse ReportExecutionServiceSoap.LogonUser(LogonUserRequest request)
-    {
-        return base.Channel.LogonUser(request);
-    }
-    
-    public ServerInfoHeader LogonUser(string userName, string password, string authority)
-    {
-        LogonUserRequest inValue = new LogonUserRequest();
-        inValue.userName = userName;
-        inValue.password = password;
-        inValue.authority = authority;
-        LogonUserResponse retVal = ((ReportExecutionServiceSoap)(this)).LogonUser(inValue);
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<LogonUserResponse> ReportExecutionServiceSoap.LogonUserAsync(LogonUserRequest request)
-    {
-        return base.Channel.LogonUserAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<LogonUserResponse> LogonUserAsync(string userName, string password, string authority)
-    {
-        LogonUserRequest inValue = new LogonUserRequest();
-        inValue.userName = userName;
-        inValue.password = password;
-        inValue.authority = authority;
-        return ((ReportExecutionServiceSoap)(this)).LogonUserAsync(inValue);
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    LogoffResponse ReportExecutionServiceSoap.Logoff(LogoffRequest request)
-    {
-        return base.Channel.Logoff(request);
-    }
-    
-    public ServerInfoHeader Logoff()
-    {
-        LogoffRequest inValue = new LogoffRequest();
-        LogoffResponse retVal = ((ReportExecutionServiceSoap)(this)).Logoff(inValue);
-        return retVal.ServerInfoHeader;
-    }
-    
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    System.Threading.Tasks.Task<LogoffResponse> ReportExecutionServiceSoap.LogoffAsync(LogoffRequest request)
-    {
-        return base.Channel.LogoffAsync(request);
-    }
-    
-    public System.Threading.Tasks.Task<LogoffResponse> LogoffAsync()
-    {
-        LogoffRequest inValue = new LogoffRequest();
-        return ((ReportExecutionServiceSoap)(this)).LogoffAsync(inValue);
+        {
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ListSecureMethodsResponse ReportExecutionServiceSoap.ListSecureMethods(ListSecureMethodsRequest request)
+        {
+            return base.Channel.ListSecureMethods(request);
+        }
+
+        public ServerInfoHeader ListSecureMethods(TrustedUserHeader TrustedUserHeader, out string[] ListSecureMethodsResult)
+        {
+            ListSecureMethodsRequest inValue = new ListSecureMethodsRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            ListSecureMethodsResponse retVal = ((ReportExecutionServiceSoap)(this)).ListSecureMethods(inValue);
+            ListSecureMethodsResult = retVal.ListSecureMethodsResult;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ListSecureMethodsResponse> ReportExecutionServiceSoap.ListSecureMethodsAsync(ListSecureMethodsRequest request)
+        {
+            return base.Channel.ListSecureMethodsAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<ListSecureMethodsResponse> ListSecureMethodsAsync(TrustedUserHeader TrustedUserHeader)
+        {
+            ListSecureMethodsRequest inValue = new ListSecureMethodsRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            return ((ReportExecutionServiceSoap)(this)).ListSecureMethodsAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LoadReportResponse ReportExecutionServiceSoap.LoadReport(LoadReportRequest request)
+        {
+            return base.Channel.LoadReport(request);
+        }
+
+        public ExecutionHeader LoadReport(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo executionInfo)
+        {
+            LoadReportRequest inValue = new LoadReportRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Report = Report;
+            inValue.HistoryID = HistoryID;
+            LoadReportResponse retVal = ((ReportExecutionServiceSoap)(this)).LoadReport(inValue);
+            ServerInfoHeader = retVal.ServerInfoHeader;
+            executionInfo = retVal.executionInfo;
+            return retVal.ExecutionHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<LoadReportResponse> ReportExecutionServiceSoap.LoadReportAsync(LoadReportRequest request)
+        {
+            return base.Channel.LoadReportAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<LoadReportResponse> LoadReportAsync(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
+        {
+            LoadReportRequest inValue = new LoadReportRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Report = Report;
+            inValue.HistoryID = HistoryID;
+            return ((ReportExecutionServiceSoap)(this)).LoadReportAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LoadReport2Response ReportExecutionServiceSoap.LoadReport2(LoadReport2Request request)
+        {
+            return base.Channel.LoadReport2(request);
+        }
+
+        public ExecutionHeader LoadReport2(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo2 executionInfo)
+        {
+            LoadReport2Request inValue = new LoadReport2Request();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Report = Report;
+            inValue.HistoryID = HistoryID;
+            LoadReport2Response retVal = ((ReportExecutionServiceSoap)(this)).LoadReport2(inValue);
+            ServerInfoHeader = retVal.ServerInfoHeader;
+            executionInfo = retVal.executionInfo;
+            return retVal.ExecutionHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<LoadReport2Response> ReportExecutionServiceSoap.LoadReport2Async(LoadReport2Request request)
+        {
+            return base.Channel.LoadReport2Async(request);
+        }
+
+        public System.Threading.Tasks.Task<LoadReport2Response> LoadReport2Async(TrustedUserHeader TrustedUserHeader, string Report, string HistoryID)
+        {
+            LoadReport2Request inValue = new LoadReport2Request();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Report = Report;
+            inValue.HistoryID = HistoryID;
+            return ((ReportExecutionServiceSoap)(this)).LoadReport2Async(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LoadReportDefinitionResponse ReportExecutionServiceSoap.LoadReportDefinition(LoadReportDefinitionRequest request)
+        {
+            return base.Channel.LoadReportDefinition(request);
+        }
+
+        public ExecutionHeader LoadReportDefinition(TrustedUserHeader TrustedUserHeader, byte[] Definition, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo executionInfo, out Warning[] warnings)
+        {
+            LoadReportDefinitionRequest inValue = new LoadReportDefinitionRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Definition = Definition;
+            LoadReportDefinitionResponse retVal = ((ReportExecutionServiceSoap)(this)).LoadReportDefinition(inValue);
+            ServerInfoHeader = retVal.ServerInfoHeader;
+            executionInfo = retVal.executionInfo;
+            warnings = retVal.warnings;
+            return retVal.ExecutionHeader;
+        }
+
+        public System.Threading.Tasks.Task<LoadReportDefinitionResponse> LoadReportDefinitionAsync(LoadReportDefinitionRequest request)
+        {
+            return base.Channel.LoadReportDefinitionAsync(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LoadReportDefinition2Response ReportExecutionServiceSoap.LoadReportDefinition2(LoadReportDefinition2Request request)
+        {
+            return base.Channel.LoadReportDefinition2(request);
+        }
+
+        public ExecutionHeader LoadReportDefinition2(TrustedUserHeader TrustedUserHeader, byte[] Definition, out ServerInfoHeader ServerInfoHeader, out ExecutionInfo2 executionInfo, out Warning[] warnings)
+        {
+            LoadReportDefinition2Request inValue = new LoadReportDefinition2Request();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Definition = Definition;
+            LoadReportDefinition2Response retVal = ((ReportExecutionServiceSoap)(this)).LoadReportDefinition2(inValue);
+            ServerInfoHeader = retVal.ServerInfoHeader;
+            executionInfo = retVal.executionInfo;
+            warnings = retVal.warnings;
+            return retVal.ExecutionHeader;
+        }
+
+        public System.Threading.Tasks.Task<LoadReportDefinition2Response> LoadReportDefinition2Async(LoadReportDefinition2Request request)
+        {
+            return base.Channel.LoadReportDefinition2Async(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SetExecutionCredentialsResponse ReportExecutionServiceSoap.SetExecutionCredentials(SetExecutionCredentialsRequest request)
+        {
+            return base.Channel.SetExecutionCredentials(request);
+        }
+
+        public ServerInfoHeader SetExecutionCredentials(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials, out ExecutionInfo executionInfo)
+        {
+            SetExecutionCredentialsRequest inValue = new SetExecutionCredentialsRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Credentials = Credentials;
+            SetExecutionCredentialsResponse retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionCredentials(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SetExecutionCredentialsResponse> ReportExecutionServiceSoap.SetExecutionCredentialsAsync(SetExecutionCredentialsRequest request)
+        {
+            return base.Channel.SetExecutionCredentialsAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<SetExecutionCredentialsResponse> SetExecutionCredentialsAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
+        {
+            SetExecutionCredentialsRequest inValue = new SetExecutionCredentialsRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Credentials = Credentials;
+            return ((ReportExecutionServiceSoap)(this)).SetExecutionCredentialsAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SetExecutionCredentials2Response ReportExecutionServiceSoap.SetExecutionCredentials2(SetExecutionCredentials2Request request)
+        {
+            return base.Channel.SetExecutionCredentials2(request);
+        }
+
+        public ServerInfoHeader SetExecutionCredentials2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials, out ExecutionInfo2 executionInfo)
+        {
+            SetExecutionCredentials2Request inValue = new SetExecutionCredentials2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Credentials = Credentials;
+            SetExecutionCredentials2Response retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionCredentials2(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SetExecutionCredentials2Response> ReportExecutionServiceSoap.SetExecutionCredentials2Async(SetExecutionCredentials2Request request)
+        {
+            return base.Channel.SetExecutionCredentials2Async(request);
+        }
+
+        public System.Threading.Tasks.Task<SetExecutionCredentials2Response> SetExecutionCredentials2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, DataSourceCredentials[] Credentials)
+        {
+            SetExecutionCredentials2Request inValue = new SetExecutionCredentials2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Credentials = Credentials;
+            return ((ReportExecutionServiceSoap)(this)).SetExecutionCredentials2Async(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SetExecutionParametersResponse ReportExecutionServiceSoap.SetExecutionParameters(SetExecutionParametersRequest request)
+        {
+            return base.Channel.SetExecutionParameters(request);
+        }
+
+        public ServerInfoHeader SetExecutionParameters(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage, out ExecutionInfo executionInfo)
+        {
+            SetExecutionParametersRequest inValue = new SetExecutionParametersRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Parameters = Parameters;
+            inValue.ParameterLanguage = ParameterLanguage;
+            SetExecutionParametersResponse retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionParameters(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SetExecutionParametersResponse> ReportExecutionServiceSoap.SetExecutionParametersAsync(SetExecutionParametersRequest request)
+        {
+            return base.Channel.SetExecutionParametersAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<SetExecutionParametersResponse> SetExecutionParametersAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
+        {
+            SetExecutionParametersRequest inValue = new SetExecutionParametersRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Parameters = Parameters;
+            inValue.ParameterLanguage = ParameterLanguage;
+            return ((ReportExecutionServiceSoap)(this)).SetExecutionParametersAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SetExecutionParameters2Response ReportExecutionServiceSoap.SetExecutionParameters2(SetExecutionParameters2Request request)
+        {
+            return base.Channel.SetExecutionParameters2(request);
+        }
+
+        public ServerInfoHeader SetExecutionParameters2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage, out ExecutionInfo2 executionInfo)
+        {
+            SetExecutionParameters2Request inValue = new SetExecutionParameters2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Parameters = Parameters;
+            inValue.ParameterLanguage = ParameterLanguage;
+            SetExecutionParameters2Response retVal = ((ReportExecutionServiceSoap)(this)).SetExecutionParameters2(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SetExecutionParameters2Response> ReportExecutionServiceSoap.SetExecutionParameters2Async(SetExecutionParameters2Request request)
+        {
+            return base.Channel.SetExecutionParameters2Async(request);
+        }
+
+        public System.Threading.Tasks.Task<SetExecutionParameters2Response> SetExecutionParameters2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, ParameterValue[] Parameters, string ParameterLanguage)
+        {
+            SetExecutionParameters2Request inValue = new SetExecutionParameters2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Parameters = Parameters;
+            inValue.ParameterLanguage = ParameterLanguage;
+            return ((ReportExecutionServiceSoap)(this)).SetExecutionParameters2Async(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ResetExecutionResponse ReportExecutionServiceSoap.ResetExecution(ResetExecutionRequest request)
+        {
+            return base.Channel.ResetExecution(request);
+        }
+
+        public ServerInfoHeader ResetExecution(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo executionInfo)
+        {
+            ResetExecutionRequest inValue = new ResetExecutionRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            ResetExecutionResponse retVal = ((ReportExecutionServiceSoap)(this)).ResetExecution(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ResetExecutionResponse> ReportExecutionServiceSoap.ResetExecutionAsync(ResetExecutionRequest request)
+        {
+            return base.Channel.ResetExecutionAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<ResetExecutionResponse> ResetExecutionAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
+        {
+            ResetExecutionRequest inValue = new ResetExecutionRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            return ((ReportExecutionServiceSoap)(this)).ResetExecutionAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ResetExecution2Response ReportExecutionServiceSoap.ResetExecution2(ResetExecution2Request request)
+        {
+            return base.Channel.ResetExecution2(request);
+        }
+
+        public ServerInfoHeader ResetExecution2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo2 executionInfo)
+        {
+            ResetExecution2Request inValue = new ResetExecution2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            ResetExecution2Response retVal = ((ReportExecutionServiceSoap)(this)).ResetExecution2(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ResetExecution2Response> ReportExecutionServiceSoap.ResetExecution2Async(ResetExecution2Request request)
+        {
+            return base.Channel.ResetExecution2Async(request);
+        }
+
+        public System.Threading.Tasks.Task<ResetExecution2Response> ResetExecution2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
+        {
+            ResetExecution2Request inValue = new ResetExecution2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            return ((ReportExecutionServiceSoap)(this)).ResetExecution2Async(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RenderResponse ReportExecutionServiceSoap.Render(RenderRequest request)
+        {
+            return base.Channel.Render(request);
+        }
+
+        public ServerInfoHeader Render(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, out byte[] Result, out string Extension, out string MimeType, out string Encoding, out Warning[] Warnings, out string[] StreamIds)
+        {
+            RenderRequest inValue = new RenderRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Format = Format;
+            inValue.DeviceInfo = DeviceInfo;
+            RenderResponse retVal = ((ReportExecutionServiceSoap)(this)).Render(inValue);
+            Result = retVal.Result;
+            Extension = retVal.Extension;
+            MimeType = retVal.MimeType;
+            Encoding = retVal.Encoding;
+            Warnings = retVal.Warnings;
+            StreamIds = retVal.StreamIds;
+            return retVal.ServerInfoHeader;
+        }
+
+        public System.Threading.Tasks.Task<RenderResponse> RenderAsync(RenderRequest request)
+        {
+            return base.Channel.RenderAsync(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Render2Response ReportExecutionServiceSoap.Render2(Render2Request request)
+        {
+            return base.Channel.Render2(request);
+        }
+
+        public ServerInfoHeader Render2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, PageCountMode PaginationMode, out byte[] Result, out string Extension, out string MimeType, out string Encoding, out Warning[] Warnings, out string[] StreamIds)
+        {
+            Render2Request inValue = new Render2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Format = Format;
+            inValue.DeviceInfo = DeviceInfo;
+            inValue.PaginationMode = PaginationMode;
+            Render2Response retVal = ((ReportExecutionServiceSoap)(this)).Render2(inValue);
+            Result = retVal.Result;
+            Extension = retVal.Extension;
+            MimeType = retVal.MimeType;
+            Encoding = retVal.Encoding;
+            Warnings = retVal.Warnings;
+            StreamIds = retVal.StreamIds;
+            return retVal.ServerInfoHeader;
+        }
+
+        public System.Threading.Tasks.Task<Render2Response> Render2Async(Render2Request request)
+        {
+            return base.Channel.Render2Async(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RenderStreamResponse ReportExecutionServiceSoap.RenderStream(RenderStreamRequest request)
+        {
+            return base.Channel.RenderStream(request);
+        }
+
+        public ServerInfoHeader RenderStream(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string Format, string StreamID, string DeviceInfo, out byte[] Result, out string Encoding, out string MimeType)
+        {
+            RenderStreamRequest inValue = new RenderStreamRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Format = Format;
+            inValue.StreamID = StreamID;
+            inValue.DeviceInfo = DeviceInfo;
+            RenderStreamResponse retVal = ((ReportExecutionServiceSoap)(this)).RenderStream(inValue);
+            Result = retVal.Result;
+            Encoding = retVal.Encoding;
+            MimeType = retVal.MimeType;
+            return retVal.ServerInfoHeader;
+        }
+
+        public System.Threading.Tasks.Task<RenderStreamResponse> RenderStreamAsync(RenderStreamRequest request)
+        {
+            return base.Channel.RenderStreamAsync(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        GetExecutionInfoResponse ReportExecutionServiceSoap.GetExecutionInfo(GetExecutionInfoRequest request)
+        {
+            return base.Channel.GetExecutionInfo(request);
+        }
+
+        public ServerInfoHeader GetExecutionInfo(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo executionInfo)
+        {
+            GetExecutionInfoRequest inValue = new GetExecutionInfoRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            GetExecutionInfoResponse retVal = ((ReportExecutionServiceSoap)(this)).GetExecutionInfo(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<GetExecutionInfoResponse> ReportExecutionServiceSoap.GetExecutionInfoAsync(GetExecutionInfoRequest request)
+        {
+            return base.Channel.GetExecutionInfoAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<GetExecutionInfoResponse> GetExecutionInfoAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
+        {
+            GetExecutionInfoRequest inValue = new GetExecutionInfoRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            return ((ReportExecutionServiceSoap)(this)).GetExecutionInfoAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        GetExecutionInfo2Response ReportExecutionServiceSoap.GetExecutionInfo2(GetExecutionInfo2Request request)
+        {
+            return base.Channel.GetExecutionInfo2(request);
+        }
+
+        public ServerInfoHeader GetExecutionInfo2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out ExecutionInfo2 executionInfo)
+        {
+            GetExecutionInfo2Request inValue = new GetExecutionInfo2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            GetExecutionInfo2Response retVal = ((ReportExecutionServiceSoap)(this)).GetExecutionInfo2(inValue);
+            executionInfo = retVal.executionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<GetExecutionInfo2Response> ReportExecutionServiceSoap.GetExecutionInfo2Async(GetExecutionInfo2Request request)
+        {
+            return base.Channel.GetExecutionInfo2Async(request);
+        }
+
+        public System.Threading.Tasks.Task<GetExecutionInfo2Response> GetExecutionInfo2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
+        {
+            GetExecutionInfo2Request inValue = new GetExecutionInfo2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            return ((ReportExecutionServiceSoap)(this)).GetExecutionInfo2Async(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        GetDocumentMapResponse ReportExecutionServiceSoap.GetDocumentMap(GetDocumentMapRequest request)
+        {
+            return base.Channel.GetDocumentMap(request);
+        }
+
+        public ServerInfoHeader GetDocumentMap(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, out DocumentMapNode result)
+        {
+            GetDocumentMapRequest inValue = new GetDocumentMapRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            GetDocumentMapResponse retVal = ((ReportExecutionServiceSoap)(this)).GetDocumentMap(inValue);
+            result = retVal.result;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<GetDocumentMapResponse> ReportExecutionServiceSoap.GetDocumentMapAsync(GetDocumentMapRequest request)
+        {
+            return base.Channel.GetDocumentMapAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<GetDocumentMapResponse> GetDocumentMapAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader)
+        {
+            GetDocumentMapRequest inValue = new GetDocumentMapRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            return ((ReportExecutionServiceSoap)(this)).GetDocumentMapAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LoadDrillthroughTargetResponse ReportExecutionServiceSoap.LoadDrillthroughTarget(LoadDrillthroughTargetRequest request)
+        {
+            return base.Channel.LoadDrillthroughTarget(request);
+        }
+
+        public ServerInfoHeader LoadDrillthroughTarget(ref ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID, out ExecutionInfo ExecutionInfo)
+        {
+            LoadDrillthroughTargetRequest inValue = new LoadDrillthroughTargetRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.DrillthroughID = DrillthroughID;
+            LoadDrillthroughTargetResponse retVal = ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTarget(inValue);
+            ExecutionHeader = retVal.ExecutionHeader;
+            ExecutionInfo = retVal.ExecutionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<LoadDrillthroughTargetResponse> ReportExecutionServiceSoap.LoadDrillthroughTargetAsync(LoadDrillthroughTargetRequest request)
+        {
+            return base.Channel.LoadDrillthroughTargetAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<LoadDrillthroughTargetResponse> LoadDrillthroughTargetAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
+        {
+            LoadDrillthroughTargetRequest inValue = new LoadDrillthroughTargetRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.DrillthroughID = DrillthroughID;
+            return ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTargetAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LoadDrillthroughTarget2Response ReportExecutionServiceSoap.LoadDrillthroughTarget2(LoadDrillthroughTarget2Request request)
+        {
+            return base.Channel.LoadDrillthroughTarget2(request);
+        }
+
+        public ServerInfoHeader LoadDrillthroughTarget2(ref ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID, out ExecutionInfo2 ExecutionInfo)
+        {
+            LoadDrillthroughTarget2Request inValue = new LoadDrillthroughTarget2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.DrillthroughID = DrillthroughID;
+            LoadDrillthroughTarget2Response retVal = ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTarget2(inValue);
+            ExecutionHeader = retVal.ExecutionHeader;
+            ExecutionInfo = retVal.ExecutionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<LoadDrillthroughTarget2Response> ReportExecutionServiceSoap.LoadDrillthroughTarget2Async(LoadDrillthroughTarget2Request request)
+        {
+            return base.Channel.LoadDrillthroughTarget2Async(request);
+        }
+
+        public System.Threading.Tasks.Task<LoadDrillthroughTarget2Response> LoadDrillthroughTarget2Async(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DrillthroughID)
+        {
+            LoadDrillthroughTarget2Request inValue = new LoadDrillthroughTarget2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.DrillthroughID = DrillthroughID;
+            return ((ReportExecutionServiceSoap)(this)).LoadDrillthroughTarget2Async(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ToggleItemResponse ReportExecutionServiceSoap.ToggleItem(ToggleItemRequest request)
+        {
+            return base.Channel.ToggleItem(request);
+        }
+
+        public ServerInfoHeader ToggleItem(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string ToggleID, out bool Found)
+        {
+            ToggleItemRequest inValue = new ToggleItemRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.ToggleID = ToggleID;
+            ToggleItemResponse retVal = ((ReportExecutionServiceSoap)(this)).ToggleItem(inValue);
+            Found = retVal.Found;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ToggleItemResponse> ReportExecutionServiceSoap.ToggleItemAsync(ToggleItemRequest request)
+        {
+            return base.Channel.ToggleItemAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<ToggleItemResponse> ToggleItemAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string ToggleID)
+        {
+            ToggleItemRequest inValue = new ToggleItemRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.ToggleID = ToggleID;
+            return ((ReportExecutionServiceSoap)(this)).ToggleItemAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NavigateDocumentMapResponse ReportExecutionServiceSoap.NavigateDocumentMap(NavigateDocumentMapRequest request)
+        {
+            return base.Channel.NavigateDocumentMap(request);
+        }
+
+        public ServerInfoHeader NavigateDocumentMap(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DocMapID, out int PageNumber)
+        {
+            NavigateDocumentMapRequest inValue = new NavigateDocumentMapRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.DocMapID = DocMapID;
+            NavigateDocumentMapResponse retVal = ((ReportExecutionServiceSoap)(this)).NavigateDocumentMap(inValue);
+            PageNumber = retVal.PageNumber;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NavigateDocumentMapResponse> ReportExecutionServiceSoap.NavigateDocumentMapAsync(NavigateDocumentMapRequest request)
+        {
+            return base.Channel.NavigateDocumentMapAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<NavigateDocumentMapResponse> NavigateDocumentMapAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string DocMapID)
+        {
+            NavigateDocumentMapRequest inValue = new NavigateDocumentMapRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.DocMapID = DocMapID;
+            return ((ReportExecutionServiceSoap)(this)).NavigateDocumentMapAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NavigateBookmarkResponse ReportExecutionServiceSoap.NavigateBookmark(NavigateBookmarkRequest request)
+        {
+            return base.Channel.NavigateBookmark(request);
+        }
+
+        public ServerInfoHeader NavigateBookmark(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string BookmarkID, out int PageNumber, out string UniqueName)
+        {
+            NavigateBookmarkRequest inValue = new NavigateBookmarkRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.BookmarkID = BookmarkID;
+            NavigateBookmarkResponse retVal = ((ReportExecutionServiceSoap)(this)).NavigateBookmark(inValue);
+            PageNumber = retVal.PageNumber;
+            UniqueName = retVal.UniqueName;
+            return retVal.ServerInfoHeader;
+        }
+
+        public System.Threading.Tasks.Task<NavigateBookmarkResponse> NavigateBookmarkAsync(NavigateBookmarkRequest request)
+        {
+            return base.Channel.NavigateBookmarkAsync(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        FindStringResponse ReportExecutionServiceSoap.FindString(FindStringRequest request)
+        {
+            return base.Channel.FindString(request);
+        }
+
+        public ServerInfoHeader FindString(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, int StartPage, int EndPage, string FindValue, out int PageNumber)
+        {
+            FindStringRequest inValue = new FindStringRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.StartPage = StartPage;
+            inValue.EndPage = EndPage;
+            inValue.FindValue = FindValue;
+            FindStringResponse retVal = ((ReportExecutionServiceSoap)(this)).FindString(inValue);
+            PageNumber = retVal.PageNumber;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<FindStringResponse> ReportExecutionServiceSoap.FindStringAsync(FindStringRequest request)
+        {
+            return base.Channel.FindStringAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<FindStringResponse> FindStringAsync(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, int StartPage, int EndPage, string FindValue)
+        {
+            FindStringRequest inValue = new FindStringRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.StartPage = StartPage;
+            inValue.EndPage = EndPage;
+            inValue.FindValue = FindValue;
+            return ((ReportExecutionServiceSoap)(this)).FindStringAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SortResponse ReportExecutionServiceSoap.Sort(SortRequest request)
+        {
+            return base.Channel.Sort(request);
+        }
+
+        public ServerInfoHeader Sort(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear, out int PageNumber, out string ReportItem, out int NumPages)
+        {
+            SortRequest inValue = new SortRequest();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.SortItem = SortItem;
+            inValue.Direction = Direction;
+            inValue.Clear = Clear;
+            SortResponse retVal = ((ReportExecutionServiceSoap)(this)).Sort(inValue);
+            PageNumber = retVal.PageNumber;
+            ReportItem = retVal.ReportItem;
+            NumPages = retVal.NumPages;
+            return retVal.ServerInfoHeader;
+        }
+
+        public System.Threading.Tasks.Task<SortResponse> SortAsync(SortRequest request)
+        {
+            return base.Channel.SortAsync(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Sort2Response ReportExecutionServiceSoap.Sort2(Sort2Request request)
+        {
+            return base.Channel.Sort2(request);
+        }
+
+        public ServerInfoHeader Sort2(ExecutionHeader ExecutionHeader, TrustedUserHeader TrustedUserHeader, string SortItem, SortDirectionEnum Direction, bool Clear, PageCountMode PaginationMode, out int PageNumber, out string ReportItem, out ExecutionInfo2 ExecutionInfo)
+        {
+            Sort2Request inValue = new Sort2Request();
+            inValue.ExecutionHeader = ExecutionHeader;
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.SortItem = SortItem;
+            inValue.Direction = Direction;
+            inValue.Clear = Clear;
+            inValue.PaginationMode = PaginationMode;
+            Sort2Response retVal = ((ReportExecutionServiceSoap)(this)).Sort2(inValue);
+            PageNumber = retVal.PageNumber;
+            ReportItem = retVal.ReportItem;
+            ExecutionInfo = retVal.ExecutionInfo;
+            return retVal.ServerInfoHeader;
+        }
+
+        public System.Threading.Tasks.Task<Sort2Response> Sort2Async(Sort2Request request)
+        {
+            return base.Channel.Sort2Async(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        GetRenderResourceResponse ReportExecutionServiceSoap.GetRenderResource(GetRenderResourceRequest request)
+        {
+            return base.Channel.GetRenderResource(request);
+        }
+
+        public ServerInfoHeader GetRenderResource(TrustedUserHeader TrustedUserHeader, string Format, string DeviceInfo, out byte[] Result, out string MimeType)
+        {
+            GetRenderResourceRequest inValue = new GetRenderResourceRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            inValue.Format = Format;
+            inValue.DeviceInfo = DeviceInfo;
+            GetRenderResourceResponse retVal = ((ReportExecutionServiceSoap)(this)).GetRenderResource(inValue);
+            Result = retVal.Result;
+            MimeType = retVal.MimeType;
+            return retVal.ServerInfoHeader;
+        }
+
+        public System.Threading.Tasks.Task<GetRenderResourceResponse> GetRenderResourceAsync(GetRenderResourceRequest request)
+        {
+            return base.Channel.GetRenderResourceAsync(request);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ListRenderingExtensionsResponse ReportExecutionServiceSoap.ListRenderingExtensions(ListRenderingExtensionsRequest request)
+        {
+            return base.Channel.ListRenderingExtensions(request);
+        }
+
+        public ServerInfoHeader ListRenderingExtensions(TrustedUserHeader TrustedUserHeader, out Extension[] Extensions)
+        {
+            ListRenderingExtensionsRequest inValue = new ListRenderingExtensionsRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            ListRenderingExtensionsResponse retVal = ((ReportExecutionServiceSoap)(this)).ListRenderingExtensions(inValue);
+            Extensions = retVal.Extensions;
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ListRenderingExtensionsResponse> ReportExecutionServiceSoap.ListRenderingExtensionsAsync(ListRenderingExtensionsRequest request)
+        {
+            return base.Channel.ListRenderingExtensionsAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<ListRenderingExtensionsResponse> ListRenderingExtensionsAsync(TrustedUserHeader TrustedUserHeader)
+        {
+            ListRenderingExtensionsRequest inValue = new ListRenderingExtensionsRequest();
+            inValue.TrustedUserHeader = TrustedUserHeader;
+            return ((ReportExecutionServiceSoap)(this)).ListRenderingExtensionsAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LogonUserResponse ReportExecutionServiceSoap.LogonUser(LogonUserRequest request)
+        {
+            return base.Channel.LogonUser(request);
+        }
+
+        public ServerInfoHeader LogonUser(string userName, string password, string authority)
+        {
+            LogonUserRequest inValue = new LogonUserRequest();
+            inValue.userName = userName;
+            inValue.password = password;
+            inValue.authority = authority;
+            LogonUserResponse retVal = ((ReportExecutionServiceSoap)(this)).LogonUser(inValue);
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<LogonUserResponse> ReportExecutionServiceSoap.LogonUserAsync(LogonUserRequest request)
+        {
+            return base.Channel.LogonUserAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<LogonUserResponse> LogonUserAsync(string userName, string password, string authority)
+        {
+            LogonUserRequest inValue = new LogonUserRequest();
+            inValue.userName = userName;
+            inValue.password = password;
+            inValue.authority = authority;
+            return ((ReportExecutionServiceSoap)(this)).LogonUserAsync(inValue);
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        LogoffResponse ReportExecutionServiceSoap.Logoff(LogoffRequest request)
+        {
+            return base.Channel.Logoff(request);
+        }
+
+        public ServerInfoHeader Logoff()
+        {
+            LogoffRequest inValue = new LogoffRequest();
+            LogoffResponse retVal = ((ReportExecutionServiceSoap)(this)).Logoff(inValue);
+            return retVal.ServerInfoHeader;
+        }
+
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<LogoffResponse> ReportExecutionServiceSoap.LogoffAsync(LogoffRequest request)
+        {
+            return base.Channel.LogoffAsync(request);
+        }
+
+        public System.Threading.Tasks.Task<LogoffResponse> LogoffAsync()
+        {
+            LogoffRequest inValue = new LogoffRequest();
+            return ((ReportExecutionServiceSoap)(this)).LogoffAsync(inValue);
+        }
     }
 }
