@@ -74,7 +74,7 @@ namespace AspNetCore.Reporting
             {
                 string _deviceInfo = string.Format(CultureInfo.InvariantCulture, "<DeviceInfo><StartPage>{0}</StartPage><EndPage>{1}</EndPage><ToggleItems>{2}</ToggleItems><MeasureItems>{3}</MeasureItems><SecondaryStreams>{4}</SecondaryStreams><StreamNames>{5}</StreamNames><StreamRoot>{6}</StreamRoot><RPLVersion>{7}</RPLVersion><ImageConsolidation>{8}</ImageConsolidation></DeviceInfo>", new object[]
                  {pageIndex,pageIndex,false,false,"Server",true,true,"","10.6",true});
-                var stream = this.RenderStream(_deviceInfo,out Encoding encoding, out string mimeType,out string fileNameExtensions);
+                var stream = this.RenderStream(_deviceInfo,out string encoding, out string mimeType,out string fileNameExtensions);
                 var bytes = new byte[0];
                 if (stream != null && stream.Length > 0L)
                 {
@@ -86,7 +86,7 @@ namespace AspNetCore.Reporting
                 {
                     MainStream = new ReportStream(bytes)
                     {
-                        Encoding = encoding,
+                        Encoding = Encoding.GetEncoding(encoding),
                         Extension = fileNameExtensions,
                         MimeType = mimeType
                     },
@@ -97,8 +97,8 @@ namespace AspNetCore.Reporting
             else
             {
                 var bytes = this.localReport.Render(renderType.ToString(), deviceInfo, PageCountMode.Actual, out string mimeType
-                      , out Encoding encoding, out string fileNameExtension, out string[] streams, out Warning[] warnings);
-                Encoding _encoding = encoding ?? Encoding.UTF8;
+                      , out string encoding, out string fileNameExtension, out string[] streams, out Warning[] warnings);
+                Encoding _encoding = Encoding.GetEncoding(encoding);
  
                 return new ReportResult
                 {
@@ -117,7 +117,7 @@ namespace AspNetCore.Reporting
                 };
             }
         }
-        private Stream RenderStream(string deviceInfo,out Encoding encoding, out string mimeType, out string fileNameExtension)
+        private Stream RenderStream(string deviceInfo,out string encoding, out string mimeType, out string fileNameExtension)
         {
             using (AspNetCore.Reporting.StreamCache streamCache = new AspNetCore.Reporting.StreamCache())
             { 
