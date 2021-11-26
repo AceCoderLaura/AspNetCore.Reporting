@@ -195,7 +195,7 @@ namespace AspNetCore.Reporting
                     StartPage = request.PageIndex,
                     EndPage = result.PageCount
                 };
-                var response0 = ReportClient.FindStringAsync(request0).GetAwaiter().GetResult();
+                var response0 = ReportClient.FindStringAsync(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, request.PageIndex, result.PageCount, request.FindString).GetAwaiter().GetResult();
                 if (response0.PageNumber > 0)
                 {
                     result.PageIndex = request.PageIndex = response0.PageNumber;
@@ -206,7 +206,8 @@ namespace AspNetCore.Reporting
                     {
                         request0.StartPage = 1;
                     }
-                    response0 = ReportClient.FindStringAsync(request0).GetAwaiter().GetResult();
+
+                    response0 = ReportClient.FindStringAsync(request0.ExecutionHeader, request0.TrustedUserHeader, request0.StartPage, request0.EndPage, request0.FindValue).GetAwaiter().GetResult();
                     if (response0.PageNumber < 1)
                     {
                         response.Status = 23;
@@ -243,7 +244,7 @@ namespace AspNetCore.Reporting
             {
                 ReportExecuteResult result = new ReportExecuteResult();
                 LoadReport(request, ref result);
-                var s = ReportClient.ToggleItemAsync(new ToggleItemRequest(request.ToggleId)).GetAwaiter().GetResult();
+                var s = ReportClient.ToggleItemAsync(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, request.ToggleId).GetAwaiter().GetResult();
                 if (s.Found)
                 {
                     Render(request, ref result);
