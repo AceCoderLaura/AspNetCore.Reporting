@@ -479,16 +479,9 @@ namespace AspNetCore.Reporting
                         = response.executionInfo.ExecutionID;
 
                 }
-                else {
-                    var request = new GetExecutionInfo3Request();
-
-                    var response = ReportClient.GetExecutionInfo3Async(request).GetAwaiter().GetResult();
-                    result.PageCount = response.executionInfo.NumPages;
-                    result.PageIndex = rRequest.PageIndex;
-                    result.SessionId
-                        = rRequest.SessionId
-                        = ReportClient.ExecutionHeader.ExecutionID
-                        = response.executionInfo.ExecutionID;
+                else
+                {
+                    throw new NotSupportedException($"Report server version {version.Major} is not supported.");
                 }
                    
             }
