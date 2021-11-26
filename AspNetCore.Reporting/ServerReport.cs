@@ -313,18 +313,17 @@ namespace AspNetCore.Reporting
                     {
                         if (request.Reset)
                         {
-                            var r = ReportClient.ResetExecutionAsync(new ResetExecutionRequest()).GetAwaiter().GetResult();
+                            var r = ReportClient.ResetExecutionAsync(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader).GetAwaiter().GetResult();
                             result.SessionId = r.executionInfo.ExecutionID;
                         }
                         ReportClient.ExecutionHeader.ExecutionID = request.SessionId;
-                        var rr = ReportClient.GetExecutionInfoAsync(new GetExecutionInfoRequest()).GetAwaiter().GetResult();
+                        var rr = ReportClient.GetExecutionInfoAsync(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader).GetAwaiter().GetResult();
                     }
                     catch { request.SessionId = null; }
                 }
                 if (string.IsNullOrEmpty(request.SessionId))
                 {
-                    LoadReportRequest request0 = new LoadReportRequest(request.Path, null);
-                    LoadReportResponse response = ReportClient.LoadReportAsync(request0).GetAwaiter().GetResult();
+                    LoadReportResponse response = ReportClient.LoadReportAsync(ReportClient.TrustedUserHeader, request.Path, null).GetAwaiter().GetResult();
 
                     try
                     {
@@ -378,8 +377,7 @@ namespace AspNetCore.Reporting
             try
             {
                 var paramenters = rRequest.Parameters.Select(t => new ParameterValue { Name = t.Key, Value = t.Value }).ToArray();
-                var request = new SetExecutionParametersRequest(paramenters, "en-us");
-                var response = ReportClient.SetExecutionParametersAsync(request).GetAwaiter().GetResult();
+                var response = ReportClient.SetExecutionParametersAsync(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, paramenters, "en-us").GetAwaiter().GetResult();
                 result.SessionId = rRequest.SessionId = response.executionInfo.ExecutionID;
             }
             catch (Exception ex)
@@ -431,7 +429,7 @@ namespace AspNetCore.Reporting
 
                 //strDeviceInfo = @"<DeviceInfo><HTMLFragment>true</HTMLFragment><Section>0</Section></DeviceInfo>";
 
-                var request = new Render2Request(format, strDeviceInfo,ReportExecutionService.PageCountMode.Actual);
+                var request = new Render2Request(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, format, strDeviceInfo, ReportExecutionService.PageCountMode.Actual);
                 var response = ReportClient.Render2Async(request).GetAwaiter().GetResult();
                 if (rRequest.RenderType == ReportRenderType.Html4_0 || rRequest.RenderType == ReportRenderType.Html5)
                 {
@@ -443,7 +441,7 @@ namespace AspNetCore.Reporting
                         var a = matchs.Result("$1");
                         var b = matchs.Result("$2");
                         var c = matchs.Result("$3");
-                        var cc = ReportClient.RenderStreamAsync(new RenderStreamRequest(format, c, strDeviceInfo)).GetAwaiter().GetResult();
+                        var cc = ReportClient.RenderStreamAsync(new RenderStreamRequest(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, format, c, strDeviceInfo)).GetAwaiter().GetResult();
                         var img = $"data:{cc.MimeType};base64,{Convert.ToBase64String(cc.Result)}";
                         var aa = a.Replace(b, img);
                         sb.Replace(a, aa);
@@ -472,9 +470,7 @@ namespace AspNetCore.Reporting
                 Versions.TryGetValue(this.ReportSettings.ReportServer, out Version version);
                 if (version.Major <= SuportExportVersion)
                 {
-                    var request = new GetExecutionInfo2Request();
-
-                    var response = ReportClient.GetExecutionInfo2Async(request).GetAwaiter().GetResult();
+                    var response = ReportClient.GetExecutionInfo2Async(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader).GetAwaiter().GetResult();
                     result.PageCount = response.executionInfo.NumPages;
                     result.PageIndex = rRequest.PageIndex;
                     result.SessionId
