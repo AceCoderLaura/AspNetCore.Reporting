@@ -377,7 +377,7 @@ namespace AspNetCore.Reporting
             try
             {
                 var paramenters = rRequest.Parameters.Select(t => new ParameterValue { Name = t.Key, Value = t.Value }).ToArray();
-                var response = ReportClient.SetExecutionParametersAsync(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, paramenters, "en-us").GetAwaiter().GetResult();
+                var response = ReportClient.SetExecutionParametersAsync(new ExecutionHeader { ExecutionID = rRequest.SessionId }, ReportClient.TrustedUserHeader, paramenters, "en-us").GetAwaiter().GetResult();
                 result.SessionId = rRequest.SessionId = response.executionInfo.ExecutionID;
             }
             catch (Exception ex)
@@ -429,7 +429,7 @@ namespace AspNetCore.Reporting
 
                 //strDeviceInfo = @"<DeviceInfo><HTMLFragment>true</HTMLFragment><Section>0</Section></DeviceInfo>";
 
-                var request = new Render2Request(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, format, strDeviceInfo, ReportExecutionService.PageCountMode.Actual);
+                var request = new Render2Request(new ExecutionHeader { ExecutionID = rRequest.SessionId }, ReportClient.TrustedUserHeader, format, strDeviceInfo, ReportExecutionService.PageCountMode.Actual);
                 var response = ReportClient.Render2Async(request).GetAwaiter().GetResult();
                 if (rRequest.RenderType == ReportRenderType.Html4_0 || rRequest.RenderType == ReportRenderType.Html5)
                 {
@@ -467,23 +467,13 @@ namespace AspNetCore.Reporting
         {
             try
             {
-                Versions.TryGetValue(this.ReportSettings.ReportServer, out Version version);
-                if (version.Major <= SuportExportVersion)
-                {
-                    var response = ReportClient.GetExecutionInfo2Async(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader).GetAwaiter().GetResult();
-                    result.PageCount = response.executionInfo.NumPages;
-                    result.PageIndex = rRequest.PageIndex;
-                    result.SessionId
-                        = rRequest.SessionId
-                        = ReportClient.ExecutionHeader.ExecutionID
-                        = response.executionInfo.ExecutionID;
-
-                }
-                else
-                {
-                    throw new NotSupportedException($"Report server version {version.Major} is not supported.");
-                }
-                   
+                var response = ReportClient.GetExecutionInfo2Async(new ExecutionHeader { ExecutionID = rRequest.SessionId }, ReportClient.TrustedUserHeader).GetAwaiter().GetResult();
+                result.PageCount = response.executionInfo.NumPages;
+                result.PageIndex = rRequest.PageIndex;
+                result.SessionId
+                    = rRequest.SessionId
+                    = ReportClient.ExecutionHeader.ExecutionID
+                    = response.executionInfo.ExecutionID;
             }
             catch (Exception ex)
             {
