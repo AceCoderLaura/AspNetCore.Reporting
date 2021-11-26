@@ -2968,6 +2968,9 @@ namespace AspNetCore.Reporting.ReportExecutionService
         {
         }
 
+        public ExecutionHeader ExecutionHeader { get; set; }
+        public TrustedUserHeader TrustedUserHeader { get; set; }
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         ListSecureMethodsResponse ReportExecutionServiceSoap.ListSecureMethods(ListSecureMethodsRequest request)
         {
