@@ -441,7 +441,7 @@ namespace AspNetCore.Reporting
                         var a = matchs.Result("$1");
                         var b = matchs.Result("$2");
                         var c = matchs.Result("$3");
-                        var cc = ReportClient.RenderStreamAsync(new RenderStreamRequest(ReportClient.ExecutionHeader, ReportClient.TrustedUserHeader, format, c, strDeviceInfo)).GetAwaiter().GetResult();
+                        var cc = ReportClient.RenderStreamAsync(new RenderStreamRequest(new ExecutionHeader { ExecutionID = rRequest.SessionId }, ReportClient.TrustedUserHeader, format, c, strDeviceInfo)).GetAwaiter().GetResult();
                         var img = $"data:{cc.MimeType};base64,{Convert.ToBase64String(cc.Result)}";
                         var aa = a.Replace(b, img);
                         sb.Replace(a, aa);
