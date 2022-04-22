@@ -296,6 +296,7 @@ namespace AspNetCore.Reporting
 
             return sb.ToString();
         }
+
         /// <summary>
         /// step 1
         /// </summary>
@@ -337,22 +338,15 @@ namespace AspNetCore.Reporting
 
 
                     result.ParametersRequired = response.executionInfo.ParametersRequired;
-                    var dict = new Dictionary<string, string>(response.executionInfo.Parameters.Length);
-                    if (response.executionInfo.Parameters.Length > 0)
+                    if (response.executionInfo.Parameters.Any())
                     {
                         foreach (var p in response.executionInfo.Parameters)
                         {
-                            if (p.DefaultValues != null && p.DefaultValues.Length > 0)
-                            {
-                                dict[p.Name] = p.DefaultValues.SingleOrDefault();
-                            }
-                            if (request.Parameters.ContainsKey(p.Name))
-                            {
-                                dict[p.Name] = request.Parameters[p.Name];                                
-                            }
+                            if (request.Parameters.Any(x => x.Name == p.Name)) continue;
+                            if (p.DefaultValues == null || !p.DefaultValues.Any()) continue;
+                            request.Parameters.Add(new ParameterValue(p.Name, p.DefaultValues.SingleOrDefault()));
                         }
                     }
-                    request.Parameters = dict;
                     result.SessionId = request.SessionId = response.executionInfo.ExecutionID;
                     //ReportClient.ToggleItemAsync()
                     SetParameters(request, result);
@@ -370,14 +364,13 @@ namespace AspNetCore.Reporting
         /// </summary>
         protected void SetParameters(ReportRequest rRequest, ReportExecuteResult result)
         {
-            if (result.ParametersRequired && rRequest.Parameters.Count == 0)
+            if (result.ParametersRequired && !rRequest.Parameters.Any())
             {
                 throw new ReportException("The report parameters is required.");
             }
             try
             {
-                var paramenters = rRequest.Parameters.Select(t => new ParameterValue { Name = t.Key, Value = t.Value }).ToArray();
-                var response = ReportClient.SetExecutionParametersAsync(new ExecutionHeader { ExecutionID = rRequest.SessionId }, ReportClient.TrustedUserHeader, paramenters, "en-us").GetAwaiter().GetResult();
+                var response = ReportClient.SetExecutionParametersAsync(new ExecutionHeader { ExecutionID = rRequest.SessionId }, ReportClient.TrustedUserHeader, rRequest.Parameters.ToArray(), "en-us").GetAwaiter().GetResult();
                 result.SessionId = rRequest.SessionId = response.executionInfo.ExecutionID;
             }
             catch (Exception ex)

@@ -515,6 +515,16 @@ namespace AspNetCore.Reporting.ReportExecutionService
 
         private string labelField;
 
+        public ParameterValue()
+        {
+        }
+        
+        public ParameterValue(string key, string value)
+        {
+            Name = key;
+            Value = value;
+        }
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using AspNetCore.Reporting.ReportExecutionService;
 
 namespace AspNetCore.Reporting
 {
@@ -72,7 +70,7 @@ namespace AspNetCore.Reporting
         /// <summary>
         /// the report parameters of the conditions
         /// </summary>
-        public Dictionary<string, string> Parameters { get; set; } = new Dictionary<string, string>();
+        public List<ParameterValue> Parameters { get; set; }
         /// <summary>
         /// set file name for export file
         /// </summary>
